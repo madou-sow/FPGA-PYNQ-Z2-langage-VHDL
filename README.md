@@ -73,25 +73,21 @@ Ces langages doivent être utilisables pour :
   
 De plus les descriptions comportementales doivent se faire dans deux modes :
 
-• mode concurrent : les données se propagent dans des éléments dont le comportement est décrit
+- mode concurrent : les données se propagent dans des éléments dont le comportement est décrit
 par des déclarations qui ont un effet permanent (comme dans les descriptions structurelles)
-
-• mode procédural : les données sont manipulées par des séquences d’instructions (comme dans
+- mode procédural : les données sont manipulées par des séquences d’instructions (comme dans
 les programmes d’ordinateurs)
 
 Dans le mode concurrent les données sont actives, on parle de “data flow”, alors que dans le mode
 procédural c’est le programme qui contrôle les événements, on parle alors de “program flow”. Il existe deux
 standards de langages de description de matériel :
 
-• VHDL : Very High Speed integrated circuit Hardware Description Language ;
-
-• Verilog : Le langage Verilog utilise deux classes de supports de données distinctes pour les modes
+- VHDL : Very High Speed integrated circuit Hardware Description Language ;
+- Verilog : Le langage Verilog utilise deux classes de supports de données distinctes pour les modes
 concurrents et procédural.
-
-• classe “net” dans le mode concurrent : un net est équivalent à un noeud d’un circuit électrique, son état est
+- classe “net” dans le mode concurrent : un net est équivalent à un noeud d’un circuit électrique, son état est
 contrôlé en permanence par les éléments aux sorties desquels il est connecté.
-
-• classe “reg” dans le mode procédural : un reg est équivalent à une variable d’un programme informatique :
+- classe “reg” dans le mode procédural : un reg est équivalent à une variable d’un programme informatique :
 il subit des affectations instantanées par instructions et conserve son état jusqu’à la prochaine affectation.
 Leurs syntaxes sont assez différentes mais mettent en oeuvre les mêmes concepts.
 
