@@ -27,3 +27,32 @@ Il existe trois grandes catégories de systèmes logiques programmables :
 - les CPLD (Complex Programmable Logic Device)
 - les FPGA (Field Programmable Gate Array)
 - les ASIC (Application Specific Integrated Circuit)
+
+### Les FPGA
+Ces systèmes programmables sont initialement destinés au prototypage de systèmes numériques
+complexes. Ils sont une bonne alternative aux circuits spécifiques, les ASIC (Application Specific Integrated
+Circuit), pour des petites ou moyennes séries.
+Il existe plusieurs grands fabricants : ALTERA, ACTEL (composants spécialisés) et XILINX. Pour cette
+expérience, nous utiliserons des FPGA de chez Xilinx.
+
+#### Implantation
+Chaque fabricant propose aussi des composants de taille variable : de 100.000 à 10.000.000 portes logiques.
+Par comparaison, les portes standards commerciales possèdent entre 2 et 8 portes logiques pour une surface
+de silicium quasiment identique.
+Quelque soit la technologie utilisée, aucune porte logique n’est réellement implantée. Il s’agit en fait de
+blocs logiques programmables, mais très versatiles (RAM), et d’une mer de connexions programmables.
+Chez Xilinx, ces blocs logiques sont appelés CLB (Common Logic Blocks).
+
+### Structure d’un FPGA - Xilinx
+L’architecture, retenue par Xilinx, se présente sous forme de deux couches : une couche circuit configurable
+et un réseau de mémoire SRAM. La structure d’un FPGA est donnée dans la figure suivante. L’échelle est
+loin d’être réelle, les fonctions logiques n’occupant qu’environ 5% du circuit.
+
+image
+
+Les FPGA sont un rassemblement et une combinaison de différents blocs :
+
+- d’entrées/sorties (IOB - Input Output Blocks),
+- de routage (PSM - Programmable Switch Matrix),
+- de logique programmable (CLB - Configurable Logic Blocks)
+- et d’autres blocs plus spécifiques.
