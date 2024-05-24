@@ -93,3 +93,21 @@ Leurs syntaxes sont assez différentes mais mettent en oeuvre les mêmes concept
 
 Nous nous intéresserons par la suite au VHDL, qui est un langage de description normalisé (IEEE) et quasi-
 universel pour décrire des circuits intégrés.
+
+### Phases de développement
+
+ <img alt="phase" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/phase-developpement-syst-num.png" width=50% height=50%  title="phase"/>
+
+ L’écriture du module VHDL est la première chose à réaliser. Ensuite, il est possible (et fortement conseillé)
+de vérifier la syntaxe de la description, en faisant appel à la fonction **Check Syntax** dans la partie
+**Synthesis XST**. Cette étape est assez rapide et ne nécessite pas de connaître la cible, contrairement à
+l’étape d’après. Viens ensuite la phase de synthèse ("Synthesis XST") puis de placement et de routage
+("Implement Design"). Ces étapes nécessitent la connaissance, d’une part, de la cible (FPGA ou CPLD) et,
+d’autre part, de l’environnement du circuit (entrées/sorties associées aux autres composants de la maquette).
+Il est donc nécessaire, avant de réaliser ces étapes-là, de faire l’assignation des broches du composant avec la
+description fournie. Pour cela, vous pouvez vous aider de la fonction "Assign Package Pins" dans la partie
+"User Constraints" et de la documentation de la maquette fournie en début de ce document.
+
+
+ <img alt="phase" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/maquette-generation-bitstream.png" width=50% height=50%  title="phase"/>
+
