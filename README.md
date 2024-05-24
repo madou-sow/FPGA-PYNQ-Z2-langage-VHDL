@@ -4,7 +4,7 @@ Dans le domaine des systèmes numériques, il existe deux grands domaines d’ap
 - les processeurs (et dérivés : microcontrôleurs, DSP...) qui font du traitement séquentiel
 - les systèmes logiques qui font du traitement parallèle
 
-  image
+[  image](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-systeme-numerique.png)
 
 ### Synthèse structurelle et description comportementale
 Il existe deux moyens pour synthétiser un système numérique logique.
