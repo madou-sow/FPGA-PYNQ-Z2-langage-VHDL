@@ -4,7 +4,7 @@ Dans le domaine des systèmes numériques, il existe deux grands domaines d’ap
 - les processeurs (et dérivés : microcontrôleurs, DSP...) qui font du traitement séquentiel
 - les systèmes logiques qui font du traitement parallèle
 
-[  image](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-systeme-numerique.png)
+ <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-systeme-numerique.png" width=50% height=50%  title="numerique"/>
 
 ### Synthèse structurelle et description comportementale
 Il existe deux moyens pour synthétiser un système numérique logique.
@@ -48,7 +48,7 @@ L’architecture, retenue par Xilinx, se présente sous forme de deux couches : 
 et un réseau de mémoire SRAM. La structure d’un FPGA est donnée dans la figure suivante. L’échelle est
 loin d’être réelle, les fonctions logiques n’occupant qu’environ 5% du circuit.
 
-image
+ <img alt="fpga" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/structureFPGA.png" width=50% height=50%  title="fpga"/>
 
 Les FPGA sont un rassemblement et une combinaison de différents blocs :
 
