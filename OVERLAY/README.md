@@ -96,6 +96,9 @@ identifiant
 - 28 E/S FPGA totales (8 broches partagées avec Pmod Un port)
 
 ## 3- Pmod interface : Peripheral Module interface
+
+ <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/figurePynqZ2.png" width=50% height=50%  title="numerique"/>
+ 
 ## 4- Superposition de base (Base Overlay)
 
 Le but de la conception de la superposition de base est de permettre à PYNQ d'utiliser des
@@ -111,3 +114,5 @@ Dans le cas des interfaces à usage général, par exemple des en-têtes Pmod ou
 superposition de base peut inclure un PYNQ MicroBlaze. Un PYNQ MicroBlaze permet de
 contrôler des appareils avec différentes interfaces et protocoles sur le même port sans nécessiter de
 modification de la conception de la logique programmable.
+
+ <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-PynqZ2.png" width=50% height=50%  title="numerique"/>
