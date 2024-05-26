@@ -97,7 +97,7 @@ identifiant
 
 ## 3- Pmod interface : Peripheral Module interface
 
- <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/figurePynqZ2.png" width=50% height=50%  title="numerique"/>
+ <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/figurePynqZ2.png" width=70% height=70%  title="numerique"/>
  
 ## 4- Superposition de base (Base Overlay)
 
@@ -115,4 +115,4 @@ superposition de base peut inclure un PYNQ MicroBlaze. Un PYNQ MicroBlaze permet
 contrôler des appareils avec différentes interfaces et protocoles sur le même port sans nécessiter de
 modification de la conception de la logique programmable.
 
- <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-PynqZ2.png" width=50% height=50%  title="numerique"/>
+ <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-PynqZ2.png" width=70% height=70%  title="numerique"/>
