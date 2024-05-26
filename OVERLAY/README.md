@@ -86,5 +86,28 @@ identifiant
 - 6 entrées analogiques asymétriques 0-3,3 V vers XADC
 - Connecteur Raspberry Pi
 - 28 E/S FPGA totales (8 broches partagées avec Pmod Un port)
-• 2 LED RVB Connecteurs d'extension
-• Deux ports Pmod standard
+- 2 LED RVB Connecteurs d'extension
+- Deux ports Pmod standard
+- 16 E/S FPGA totales (8 broches partagées avec Connecteur Raspberry Pi)
+- Connecteur Arduino Shield
+- 24 E/S FPGA totales
+- 6 entrées analogiques asymétriques 0-3,3 V vers XADC
+- Connecteur Raspberry Pi
+- 28 E/S FPGA totales (8 broches partagées avec Pmod Un port)
+
+## 3- Pmod interface : Peripheral Module interface
+## 4- Superposition de base (Base Overlay)
+
+Le but de la conception de la superposition de base est de permettre à PYNQ d'utiliser des
+périphériques sur une carte prête à l'emploi. La conception inclut une adresse IP matérielle pour
+contrôler les périphériques sur la carte cible et connecte ces blocs IP au Zynq PS. Si une
+superposition de base est disponible pour une carte, les périphériques peuvent être utilisés à partir
+de l'environnement Python immédiatement après le démarrage du système.
+Les périphériques de la carte incluent généralement des périphériques GPIO (voyants,
+commutateurs, boutons), vidéo, audio et autres interfaces personnalisées.
+Comme la superposition de base inclut IP pour les périphériques sur une carte, elle peut également
+être utilisée comme conception de référence pour créer de nouvelles superpositions personnalisées.
+Dans le cas des interfaces à usage général, par exemple des en-têtes Pmod ou Arduino, la
+superposition de base peut inclure un PYNQ MicroBlaze. Un PYNQ MicroBlaze permet de
+contrôler des appareils avec différentes interfaces et protocoles sur le même port sans nécessiter de
+modification de la conception de la logique programmable.
