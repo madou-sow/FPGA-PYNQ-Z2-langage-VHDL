@@ -48,35 +48,43 @@ en spécifiant le nom du fichier de flux binaire. L'instanciation de la superpos
 flux binaire par défaut et analyse le fichier Tcl.
 
 ## 2- Superpositions PYNQ-Z2 (Overlays PYNQ-Z2)
+
 La carte PYNQ-Z2 présente les caractéristiques suivantes: Spécification de produit : ZYNQ XC7Z020-
 1CLG400C
-• Processeur Cortex-A9 bicoeur à 650 MHz
-• Contrôleur de mémoire DDR3 avec 8 canaux DMA et 4 ports esclaves AXI3 hautes performances
-• Contrôleurs de périphériques à large bande passante: 1G Ethernet, USB 2.0, SDIO
-• Contrôleur de périphérique à faible bande passante: SPI, UART, PEUT, I2C
-• Programmable à partir de JTAG, flash Quad-SPI, et carte MicroSD
-• Logique programmable équivalente à l'Artix-7 FPGA
-• 13 300 tranches logiques, chacune avec quatre LUT à 6 entrées et 8 tongs
-• 630 Ko de RAM bloc rapide
-• 4 tuiles de gestion d'horloge, chacune avec une phase boucle verrouillée (PLL) et horloge en mode mixte
+
+- Processeur Cortex-A9 bicoeur à 650 MHz
+- Contrôleur de mémoire DDR3 avec 8 canaux DMA et 4 ports esclaves AXI3 hautes performances
+- Contrôleurs de périphériques à large bande passante: 1G Ethernet, USB 2.0, SDIO
+- Contrôleur de périphérique à faible bande passante: SPI, UART, PEUT, I2C
+- Programmable à partir de JTAG, flash Quad-SPI, et carte MicroSD
+- Logique programmable équivalente à l'Artix-7 FPGA
+- 13 300 tranches logiques, chacune avec quatre LUT à 6 entrées et 8 tongs
+- 630 Ko de RAM bloc rapide
+- 4 tuiles de gestion d'horloge, chacune avec une phase boucle verrouillée (PLL) et horloge en mode mixte
 gestionnaire (MMCM)
-• 220 tranches DSP
-• Convertisseur analogique-numérique sur puce (XADC) Mémoire
-• 512 Mo de mémoire DDR3 avec bus 16 bits à 1050 Mbps
-• Flash Quad-SPI 16 Mo avec programmation d'usine Compatible EUI-48/64 ™ 48 bits unique au monde
+- 220 tranches DSP
+- Convertisseur analogique-numérique sur puce (XADC) Mémoire
+- 512 Mo de mémoire DDR3 avec bus 16 bits à 1050 Mbps
+- Flash Quad-SPI 16 Mo avec programmation d'usine Compatible EUI-48/64 ™ 48 bits unique au monde
 identifiant
-• Emplacement MicroSD Puissance
-• Alimenté par une source d'alimentation externe USB ou 7V-15V
-• Gigabit Ethernet PHY
-• Circuit de programmation micro USB-JTAG
-• Pont micro USB-UART
-• USB 2.0 OTG PHY (prend en charge l'hôte uniquement) Audio et vidéo
-• Port récepteur HDMI (entrée)
-• Port source HDMI (sortie)
-• Interface I2S avec DAC 24 bits avec prise TRRS 3,5 mm
-• Entrée ligne avec prise jack 3,5 mm Interrupteurs, boutons poussoirs et LED
-• 4 boutons poussoirs
-• 2 interrupteurs à glissière
-• 4 LED
+- Emplacement MicroSD Puissance
+- Alimenté par une source d'alimentation externe USB ou 7V-15V
+- Gigabit Ethernet PHY
+- Circuit de programmation micro USB-JTAG
+- Pont micro USB-UART
+- USB 2.0 OTG PHY (prend en charge l'hôte uniquement) Audio et vidéo
+- Port récepteur HDMI (entrée)
+- Port source HDMI (sortie)
+- Interface I2S avec DAC 24 bits avec prise TRRS 3,5 mm
+- Entrée ligne avec prise jack 3,5 mm Interrupteurs, boutons poussoirs et LED
+- 4 boutons poussoirs
+- 2 interrupteurs à glissière
+- 4 LED
+- 16 E/S FPGA totales (8 broches partagées avec Connecteur Raspberry Pi)
+- Connecteur Arduino Shield
+- 24 E/S FPGA totales
+- 6 entrées analogiques asymétriques 0-3,3 V vers XADC
+- Connecteur Raspberry Pi
+- 28 E/S FPGA totales (8 broches partagées avec Pmod Un port)
 • 2 LED RVB Connecteurs d'extension
 • Deux ports Pmod standard
