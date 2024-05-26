@@ -140,7 +140,7 @@ chacun d’entre eux, il est indispensable de donner sa direction :
 - buffer sortie rétroactive
 - inout entrée-sortie bidirectionnelle (conflits possibles) et son type (voir section suivante).
 
-   <img alt="vhdl" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-entite-vhdl.png" width=50% height=50%  title="vhdl"/>
+   <img alt="vhdl" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-entite-vhdl.png" width=30% height=30%  title="vhdl"/>
 
 ```
 1 entity cours is
