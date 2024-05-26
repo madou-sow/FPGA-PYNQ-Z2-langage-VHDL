@@ -24,6 +24,9 @@ matériel et encapsulées avec cette API PYNQ Python. Les développeurs de logic
 circuit intégré qui regroupe, sur une seule et unique puce, les différents composants d'un ordinateur tels que les processeurs, la mémoire, les périphériques d'interface, etc.
 
 **IP** : Propriété Intellectuel => Intelectual Property
+
 **PL** : Programmation Logique
+
 **PS** : Programmation Système
+
 **Overlay** : Superposition
