@@ -1,4 +1,4 @@
-## REPRÉSENTATION COMPORTEMENTALE DES SYSTÈMES NUMÉRIQUES
+## I. REPRÉSENTATION COMPORTEMENTALE DES SYSTÈMES NUMÉRIQUES
 
 Dans le domaine des systèmes numériques, il existe deux grands domaines d’applications :
 - les processeurs (et dérivés : microcontrôleurs, DSP...) qui font du traitement séquentiel
@@ -6,7 +6,7 @@ Dans le domaine des systèmes numériques, il existe deux grands domaines d’ap
 
  <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-systeme-numerique.png" width=50% height=50%  title="numerique"/>
 
-### Synthèse structurelle et description comportementale
+### 1. Synthèse structurelle et description comportementale
 Il existe deux moyens pour synthétiser un système numérique logique.
 Le premier fait appel aux techniques de synthèse classique ou encore appelée synthèse structurelle. A partir
 d’une table de vérité, on obtient les équations logiques des sorties, à partir des entrées, faisant intervenir des
@@ -21,21 +21,21 @@ Il n’est alors plus nécessaire de connaître la structure que devra avoir le 
 simplement son comportement. On parle alors de description comportementale du système. Ceci nécessite
 l’utilisation de langage de description de haut niveau, tel que le VHDL ou le Verilog.
 
-### Composants programmables
+### 2. Composants programmables
 Il existe trois grandes catégories de systèmes logiques programmables :
 
 - les CPLD (Complex Programmable Logic Device)
 - les FPGA (Field Programmable Gate Array)
 - les ASIC (Application Specific Integrated Circuit)
 
-### Les FPGA
+### 3. Les FPGA
 Ces systèmes programmables sont initialement destinés au prototypage de systèmes numériques
 complexes. Ils sont une bonne alternative aux circuits spécifiques, les ASIC (Application Specific Integrated
 Circuit), pour des petites ou moyennes séries.
 Il existe plusieurs grands fabricants : ALTERA, ACTEL (composants spécialisés) et XILINX. Pour cette
 expérience, nous utiliserons des FPGA de chez Xilinx.
 
-#### Implantation
+#### 3.1 Implantation
 Chaque fabricant propose aussi des composants de taille variable : de 100.000 à 10.000.000 portes logiques.
 Par comparaison, les portes standards commerciales possèdent entre 2 et 8 portes logiques pour une surface
 de silicium quasiment identique.
@@ -57,7 +57,7 @@ Les FPGA sont un rassemblement et une combinaison de différents blocs :
 - de logique programmable (CLB - Configurable Logic Blocks)
 - et d’autres blocs plus spécifiques.
 
-## DÉVELOPPEMENT D’UN SYSTÈME NUMÉRIQUE
+## II. DÉVELOPPEMENT D’UN SYSTÈME NUMÉRIQUE
 
 Les langages de description de matériel (HDL = Hardware Description Langage) font partie des outils de
 base pour la conception de systèmes logiques intégrés câblés, que le produit final soit construit sur des
@@ -94,7 +94,7 @@ Leurs syntaxes sont assez différentes mais mettent en oeuvre les mêmes concept
 Nous nous intéresserons par la suite au VHDL, qui est un langage de description normalisé (IEEE) et quasi-
 universel pour décrire des circuits intégrés.
 
-### Phases de développement
+### 1. Phases de développement
 
  <img alt="phase" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/phase-developpement-syst-num.png" width=70% height=70%  title="phase"/>
 
@@ -111,3 +111,33 @@ description fournie. Pour cela, vous pouvez vous aider de la fonction "Assign Pa
 
  <img alt="phase" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/maquette-generation-bitstream.png" width=70% height=70%  title="phase"/>
 
+### 2. Structure d’un module VHDL
+
+La description d’un système numérique par le biais du langage VHDL passe par 3 étapes différentes :
+- la déclaration des ressources externes (bibliothèques) ;
+- la description de l’entité du système, correspondant à la liste des entrées/sorties ;
+- la description de l’architecture du système, correspondant à la définition des fonctionnalités du système.
+L’ensemble est contenu dans un fichier source portant l’extension *.vhd.
+
+#### 2.1. Déclaration des ressources externes
+
+Cette phase est réalisée automatiquement pour les bibliothèques courantes. On retrouve en en-tête du fichier
+source *.vhd les instructions suivantes :
+
+```
+1 library IEEE ;
+2 use IEEE . STD_LOGIC_1164 . ALL;
+3 use IEEE . STD_LOGIC_ARITH . ALL;
+4 use IEEE . STD_LOGIC_UNSIGNED . ALL;
+```
+
+#### 2.2. Entité
+
+L’entité permet de spécifier les différents ports d’entrées/sorties du système. Pour
+chacun d’entre eux, il est indispensable de donner sa direction :
+- in entrée simple
+- out sortie simple
+- buffer sortie rétroactive
+- inout entrée-sortie bidirectionnelle (conflits possibles) et son type (voir section suivante).
+
+   <img alt="vhdl" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-entite-vhdl.png" width=70% height=70%  title="vhdl"/>
