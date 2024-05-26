@@ -116,3 +116,45 @@ contrôler des appareils avec différentes interfaces et protocoles sur le même
 modification de la conception de la logique programmable.
 
  <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-PynqZ2.png" width=70% height=70%  title="numerique"/>
+
+## 5- Superposition Logictools (Overlay Logictools)
+La superposition logictools se compose de blocs matériels programmables à connecter à des circuits logiques
+numériques externes. Des machines à états finis, des fonctions logiques booléennes et des modèles
+numériques peuvent être générés à partir de Python. Un commutateur programmable connecte les entrées et
+les sorties des blocs matériels aux broches IO externes. La superposition logictools peut également avoir un
+analyseur de trace pour capturer les données de l'interface IO à des fins d'analyse et de déboguage.
+
+## 6- Outils logiques PYNQ-Z2
+La superposition logictools du PYNQ-Z2 comporte deux instances du LCP (Logic Control Processor)
+logictools; l'un connecté à l'en-tête Arduino et l'autre connecté à l'en-tête RPi (Raspberry Pi).
+L'en-tête Arduino a 20 broches et le RPi a 26 broches qui peuvent être utilisées comme GPIO pour le LCP.
+Les 4 LED et 4 boutons poussoirs peuvent également être connectés à l'un ou l'autre LCP, augmentant ainsi
+le nombre d'entrées disponibles. Notez que les voyants et les boutons-poussoirs sont partagés et ne peuvent
+être utilisés que par un LCP à la fois.
+
+## 7- Bibliothèques PYNQ
+
+Les systèmes embarqués typiques prennent en charge une combinaison fixe de périphériques (par exemple
+SPI, IIC, UART, vidéo, USB). Il peut également y avoir des GPIO (broches d'entrée/sortie à usage général) disponibles. Le nombre de GPIO disponibles dans un système embarqué basé sur le processeur est
+généralement limité, et le GPIO est également contrôlé par le processeur principal. En tant que processeur principal qui gère le reste du système, les performances GPIO sont généralement limitées.
+Les plates-formes Zynq ont généralement beaucoup plus de broches d'E/S disponibles qu'un système
+embarqué classique. Des contrôleurs matériels dédiés et des processeurs logiciels supplémentaires peuvent être implémentés dans le PL et connectés à des interfaces externes.
+
+PYNQ fonctionne sous Linux qui utilise par défaut les périphériques Zynq PS suivants: Carte SD pour
+démarrer le système et héberger le système de fichiers Linux, Ethernet pour se connecter au notebook
+Jupyter, UART pour l'accès au terminal Linux et USB.
+
+Le port USB et d'autres interfaces standard peuvent être utilisés pour connecter des périphériques USB
+standard et d'autres périphériques au Zynq PS où ils peuvent être contrôlés à partir de Python/Linux. Comme le PL est programmable, une superposition qui fournit des contrôleurs pour ces périphériques ou interfaces doit être chargée avant de pouvoir être utilisée.
+
+Une bibliothèque d'IP matérielle est incluse dans Vivado et peut être utilisée pour se connecter à un large éventail de normes et de protocoles d'interface. PYNQ fournit une API Python pour un certain nombre de périphériques courants, notamment la vidéo (entrée et sortie HDMI), les périphériques GPIO (boutons, commutateurs, LED) et les capteurs et actionneurs. L'API PYNQ peut également être étendue pour prendre en charge des adresses IP supplémentaires.
+Les plates-formes Zynq ont généralement un ou plusieurs en-têtes ou interfaces qui permettent de connecter des périphériques externes, ou de se connecter directement aux broches Zynq PL. Notez que si un
+périphérique peut être physiquement connecté aux broches Zynq PL, un contrôleur doit être intégré à la
+superposition et un pilote logiciel fourni avant que le périphérique puisse être utilisé.
+Les bibliothèques PYNQ prennent en charge le sous-système PynqMicroBlaze, permettant le chargement des
+applications précompilées et la création et la compilation de nouvelles applications à partir de Jupyter.
+
+PYNQ prend également en charge le contrôle de bas niveau d'une superposition, y compris la lecture/écriture
+d'E/S mappées en mémoire, l'allocation de mémoire (par exemple, pour une utilisation par un maître PL), le
+contrôle et la gestion d'une superposition (téléchargement d'une superposition, lecture d'IP dans une
+superposition ), et contrôle de bas niveau du PL (téléchargement d'un train binaire).
