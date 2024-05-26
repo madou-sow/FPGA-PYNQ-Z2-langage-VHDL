@@ -96,7 +96,7 @@ universel pour décrire des circuits intégrés.
 
 ### Phases de développement
 
- <img alt="phase" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/phase-developpement-syst-num.png" width=50% height=50%  title="phase"/>
+ <img alt="phase" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/phase-developpement-syst-num.png" width=70% height=70%  title="phase"/>
 
  L’écriture du module VHDL est la première chose à réaliser. Ensuite, il est possible (et fortement conseillé)
 de vérifier la syntaxe de la description, en faisant appel à la fonction **Check Syntax** dans la partie
@@ -109,5 +109,5 @@ description fournie. Pour cela, vous pouvez vous aider de la fonction "Assign Pa
 "User Constraints" et de la documentation de la maquette fournie en début de ce document.
 
 
- <img alt="phase" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/maquette-generation-bitstream.png" width=50% height=50%  title="phase"/>
+ <img alt="phase" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/maquette-generation-bitstream.png" width=70% height=70%  title="phase"/>
 
