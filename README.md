@@ -140,4 +140,69 @@ chacun d’entre eux, il est indispensable de donner sa direction :
 - buffer sortie rétroactive
 - inout entrée-sortie bidirectionnelle (conflits possibles) et son type (voir section suivante).
 
-   <img alt="vhdl" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-entite-vhdl.png" width=70% height=70%  title="vhdl"/>
+   <img alt="vhdl" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/schema-entite-vhdl.png" width=50% height=50%  title="vhdl"/>
+
+```
+1 entity cours is
+2 port (
+3      a, b : in STD_LOGIC ;
+4      s : out STD_LOGIC
+5 );
+6 end cours ;
+```
+
+#### 2.3. Architecture
+
+Une architecture est reliée à une entité et permet de décrire le fonctionnement du système. Cette description
+peut être de deux types :
+- description comportementale : le comportement du système est décrit (description la plus couramment
+utilisée en VHDL) ;
+- description structurelle : la structure même du système est décrite à base de portes logiques, bascules...(description réservée à des fonctions simples ou pré-calculées).
+
+```
+1 architecture Behavorial of cours i s
+2 −− declaration dessignaux
+3 begin
+4    processus1 ;
+5    processus2 ;
+6    ...
+7 end Behavorial ;
+```
+
+### 3. Objets et types en VHDL
+
+#### 3.1. Objets
+
+- signal objet physique, associé à des évènements
+- variable intermédiaire de calcul, non physique
+- constant
+
+#### 3.2. Types
+
+Types de base : **bit, bit_vector, integer, boolean**
+
+Types IEEE : **std_logic, std_logic_vector, signed, unsigned**
+
+Types définis par l’utilisateur :
+- type énuméré, exemple : type jour is **(lu, ma, me, je, ve, sa, di)**; (souvent utilisé dans les machines à état)
+- sous-type : **subtype octet is bit_vector(0 to 7);**
+
+#### 3.3. Notations
+
+bit : ’0’ ou ’1’ ; bit_vector : "0100" ; ASCII : "Texte" ; Décimal : 423 ;
+
+Hexadécimal : x"1A"
+
+#### 3.4. Opérateurs en VHDL
+
+LOGIQUES : and, nand, or, nor, xor, xnor, not
+
+DÉCALAGE : sll, slr, sla, sra, rol, ror
+
+RELATIONNELS : =, /=, <, >, <=, >=
+
+ARITHMÉTIQUES : +, -, *, /, MOD
+
+CONCATENATION : &
+
+AFFECTATION : <=
