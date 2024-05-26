@@ -206,3 +206,26 @@ ARITHMÉTIQUES : +, -, *, /, MOD
 CONCATENATION : &
 
 AFFECTATION : <=
+
+### 4. Instructions en VHDL
+
+#### 4.1. Hors processus
+Ces instructions décrivent le plus souvent des éléments combinatoires (concurrentes).
+
+##### 4.1.1 Affectation conditionnelle
+
+```
+1 x <= a when cond1 else
+2   b when cond2 else
+3   ...
+4   z;
+```
+
+##### 4.1.2 Affectation sélective
+```
+1 with expr select
+2   x <= a when val1 ,
+3        b when val2 ,
+4        ...
+5        z when others ;
+```
