@@ -30,3 +30,19 @@ circuit intégré qui regroupe, sur une seule et unique puce, les différents co
 **PS** : Programmation Système
 
 **Overlay** : Superposition
+
+## 1- CHARGEMENT D'UNE SUPERPOSITION (Loading an Overlay)
+
+Par défaut, un overlay (bitstream) appelé base est téléchargé dans PL au démarrage. La superposition de base
+peut être considérée comme une conception de référence pour une planche. De nouvelles superpositions
+peuvent être installées ou copiées sur la carte et peuvent être chargées dans le PL pendant que le système
+fonctionne.
+
+Une superposition comprend généralement:
+- Un bitstream pour configurer la structure FPGA
+- Un fichier Tcl de conception Vivado pour déterminer l'adresse IP disponible
+- API Python qui expose les adresses IP en tant qu'attributs
+
+La classe PYNQ Overlay peut être utilisée pour charger une superposition. Une superposition est instanciée
+en spécifiant le nom du fichier de flux binaire. L'instanciation de la superposition télécharge également le
+flux binaire par défaut et analyse le fichier Tcl.
