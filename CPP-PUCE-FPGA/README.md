@@ -38,3 +38,9 @@ disponibles.
  <img alt="rtl" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLresultat.png" width=50% height=50%  title="rtl"/>
 
 ### 4- Le code source *xsomadd_hw.h (../solution1/impl/ip/drivers/somadd_v1_0/src/)* du driver généré par Vivado HLS indique les adresses pour définir les attributs de la fonction somadd.cpp. Les entrées sont accessibles à travers les adresses *0x10, 0x18* et la sortie à travers l'adresse *0x20*
+
+ <img alt="hwh" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/xsomadd_hwh.png" width=50% height=50%  title="hwh"/>
+
+ ### 5- Lancer Vivado IP integrator et importer l'IP créée depuis le dépôt IP
+
+  <img alt="imp" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/Importation-IP-Crée.png" width=50% height=50%  title="imp"/>
