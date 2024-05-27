@@ -60,4 +60,4 @@ disponibles.
 design_1.hwh" en lui donnant le même préfixe que les fichiers .tcl et .bit
 
 
-  <img alt="lipnhwh" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/fichier-lipnhwh.png" width=50% height=50%  title="lipnhwh"/>
+  <img alt="lipnhwh" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/fichier-lipnhwh.png" width=70% height=70%  title="lipnhwh"/>
