@@ -98,3 +98,7 @@ Jupyter NoteBook avec des entrées (2,5)
 ### 15- Rajoutons notre design version 1 à l'algorithme KMeans : l'implémentation de la fonction som_add_2D sur FPGA
 
  <img alt="design kmeans" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/notredesign-dans-KMeans.png" width=80% height=80%  title="design kmeans"/>
+
+### 16- Rajoutons notre design version 2 à l'algorithme KMeans : l'implémentation de la fonction som_add_2D sur FPGA
+
+ <img alt="v2 design kmeans" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/v2design-overlay-somadd.png" width=80% height=80%  title="v2 design kmeans"/>
