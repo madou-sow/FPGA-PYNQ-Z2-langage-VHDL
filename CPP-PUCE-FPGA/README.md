@@ -44,3 +44,8 @@ disponibles.
  ### 5- Lancer Vivado IP integrator et importer l'IP créée depuis le dépôt IP
 
   <img alt="imp" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/Importation-IP-Crée.png" width=50% height=50%  title="imp"/>
+
+### 6- Créer un bloc design, ajouter l'IP somadd créée, connecter automatiquement de l'IP au processing system Pynq-Z2 et créer le design
+
+
+  <img alt="imp" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/diagramVivadoIP.png" width=50% height=50%  title="imp"/>
