@@ -69,5 +69,8 @@ design_1.hwh" en lui donnant le même préfixe que les fichiers .tcl et .bit
 - à l'aide du navigateur chrome accéder aux notebookjupyter "http://10.10.1.72:9090/" avec les idenfiants xilinx et xilinx  
 - importer les 3 fichiers lipn.tcl, lipn.bit et lipn.hwh
 
-    <img alt="imp" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/liste3fichiersexportes.png" width=50% height=50%  title="imp"/>
+    <img alt="liste3" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/liste3fichiersexportes.png" width=70% height=70%  title="liste3"/>
 
+### 10- Charger le fichier Bitstream lipn.bit contenant le overlay et vérifier si le module IP Blocks est effectivement chargé
+
+  <img alt="jupyter1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/jupyter1.png" width=70% height=70%  title="jupyter1"/>
