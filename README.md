@@ -2,10 +2,10 @@
 
 ## SYSTÈMES NUMÉRIQUES 
 ### REPRÉSENTATION COMPORTEMENTALE
-- 1. Synthèse structurelle et description comportementale
-- 2. Composants programmables
-- 3. Les FPGA
-- 4. Structure d’un FPGA - Xilinx
+1. Synthèse structurelle et description comportementale
+2. Composants programmables
+3. Les FPGA
+4. Structure d’un FPGA - Xilinx
      
 ### DÉVELOPPEMENT
 - 1. Phases de développement
