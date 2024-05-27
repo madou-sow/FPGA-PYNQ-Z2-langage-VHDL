@@ -29,4 +29,8 @@ disponibles.
 
 ### 2- La Synthèse du Programme s'exécute avec le triangle vert (Run C Synthesis) sur la barre des outils
 
- <img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/runcsynthesissomadd.png" width=70% height=70%  title="hls"/>
+ <img alt="rsync" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/runcsynthesissomadd.png" width=70% height=70%  title="rsync"/>
+
+### 3- L'exportation en RTL (Register Transfer Level) en format IP et VHDL
+
+ <img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLasIPexecutution.png" width=70% height=70%  title="hls"/>
