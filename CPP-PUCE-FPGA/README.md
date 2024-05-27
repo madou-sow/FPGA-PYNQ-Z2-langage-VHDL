@@ -49,3 +49,15 @@ disponibles.
 
 
   <img alt="imp" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/diagramVivadoIP.png" width=50% height=50%  title="imp"/>
+
+### 7- Exporter les 2 fichiers (.tcl et .bit) avec les même préfixes "Fichier/Export/ à par de Vivado IP
+
+- Export Block Design : lipn.tcl  
+- Export Bitstream File : lipn.bit  
+
+## 8- Créer le fichier lipn.hwh en copiant le fichier "/tempo/xilinx-vivado/project-vivado-hls/mamadou/xc7z020clg400-1/ipsomadd/ipsomadd.srcs/sources_1/bd/design_1/hw_handoff/
+
+design_1.hwh" en lui donnant le même préfixe que les fichiers .tcl et .bit
+
+
+  <img alt="lipnhwh" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/fichier-lipnhwh.png" width=50% height=50%  title="lipnhwh"/>
