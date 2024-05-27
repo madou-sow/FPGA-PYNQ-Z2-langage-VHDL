@@ -55,9 +55,19 @@ disponibles.
 - Export Block Design : lipn.tcl  
 - Export Bitstream File : lipn.bit  
 
-## 8- Créer le fichier lipn.hwh en copiant le fichier "/tempo/xilinx-vivado/project-vivado-hls/mamadou/xc7z020clg400-1/ipsomadd/ipsomadd.srcs/sources_1/bd/design_1/hw_handoff/
+### 8- Créer le fichier lipn.hwh en copiant le fichier "/tempo/xilinx-vivado/project-vivado-hls/mamadou/xc7z020clg400-1/ipsomadd/ipsomadd.srcs/sources_1/bd/design_1/hw_handoff/
 
 design_1.hwh" en lui donnant le même préfixe que les fichiers .tcl et .bit
 
 
   <img alt="lipnhwh" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/fichier-lipnhwh.png" width=70% height=70%  title="lipnhwh"/>
+
+### 9- Mise en place de la carte FPGA PYNQ-Z2
+
+- Alimenter électriquement la carte avec le câble USB  
+- placer sur le réseau local votre carte FPGA à l'aide d'une adresse IP statique et un câble ethernet  
+- à l'aide du navigateur chrome accéder aux notebookjupyter "http://10.10.1.72:9090/" avec les idenfiants xilinx et xilinx  
+- importer les 3 fichiers lipn.tcl, lipn.bit et lipn.hwh
+
+    <img alt="imp" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/liste3fichiersexportes.png" width=50% height=50%  title="imp"/>
+
