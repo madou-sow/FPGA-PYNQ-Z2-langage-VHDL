@@ -36,3 +36,5 @@ disponibles.
 <img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLasIPexecutution.png" width=50% height=50%  title="hls"/>
 
  <img alt="rtl" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLresultat.png" width=50% height=50%  title="rtl"/>
+
+### 4- Le code source *xsomadd_hw.h (../solution1/impl/ip/drivers/somadd_v1_0/src/)* du driver généré par Vivado HLS indique les adresses pour définir les attributs de la fonction somadd.cpp. Les entrées sont accessibles à travers les adresses *0x10, 0x18* et la sortie à travers l'adresse *0x20*
