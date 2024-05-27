@@ -19,3 +19,7 @@ void somadd (int a, int b, int& c){
       c = a + b;
 }
 ```
+Vivado HLS utilise des directives de compilation commençant par "**#pragma HLS**" pour que le matériel
+interprète le code C/C++.
+La première ligne avec prama permet d'initialiser le noyau dès que les données du flux d'entrée sont
+disponibles.
