@@ -19,4 +19,4 @@
 3. Pmod interface : Peripheral Module interface
 4. Superposition de base (Base Overlay)
 
-## DÉVELOPPER UN CODE EN C/C++ À COMPILER SUR UNE FPGA
+## DÉVELOPPER UN CODE EN C/C++ À COMPILER SUR UNE PUCE FPGA
