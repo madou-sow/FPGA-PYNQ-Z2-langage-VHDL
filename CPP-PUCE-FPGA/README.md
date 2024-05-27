@@ -75,6 +75,6 @@ design_1.hwh" en lui donnant le même préfixe que les fichiers .tcl et .bit
 
   <img alt="jupyter1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/jupyter1.png" width=80% height=80%  title="jupyter1"/>
 
-### 11- test de vérification du design
+### 11- Test de vérification du design
  
  <img alt="jupyter2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/jupyter2.png" width=80% height=80%  title="jupyter2"/>
