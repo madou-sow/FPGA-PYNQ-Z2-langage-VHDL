@@ -23,3 +23,10 @@ Vivado HLS utilise des directives de compilation commençant par "**#pragma HLS*
 interprète le code C/C++.
 La première ligne avec prama permet d'initialiser le noyau dès que les données du flux d'entrée sont
 disponibles.
+
+
+ <img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/hls-somadd.png" width=70% height=70%  title="hls"/>
+
+### 2- La Synthèse du Programme s'exécute avec le triangle vert (Run C Synthesis) sur la barre des outils
+
+ <img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/runcsynthesissomadd.png" width=70% height=70%  title="hls"/>
