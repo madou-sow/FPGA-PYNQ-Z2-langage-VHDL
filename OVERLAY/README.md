@@ -158,3 +158,105 @@ PYNQ prend également en charge le contrôle de bas niveau d'une superposition, 
 d'E/S mappées en mémoire, l'allocation de mémoire (par exemple, pour une utilisation par un maître PL), le
 contrôle et la gestion d'une superposition (téléchargement d'une superposition, lecture d'IP dans une
 superposition ), et contrôle de bas niveau du PL (téléchargement d'un train binaire).
+
+## 8- Méthodologie de conception de superposition
+
+Comme décrit dans l'introduction de PYNQ, les superpositions sont analogues aux bibliothèques de logiciels.
+Un programmeur peut télécharger des superpositions dans le Zynq® PL au moment de l'exécution pour
+fournir les fonctionnalités requises par l'application logicielle.
+
+Une superposition est une classe de conception de logique programmable. Les conceptions de logique
+programmable sont généralement hautement optimisées pour une tâche spécifique. Cependant, les
+superpositions sont conçues pour être configurables et réutilisables pour un large éventail d'applications. Une
+superposition PYNQ aura une interface Python, permettant à un programmeur logiciel de l'utiliser comme
+n'importe quel autre package Python.
+
+Un programmeur de logiciel peut utiliser une superposition, mais ne créera généralement pas de
+superposition, car cela nécessite généralement un haut degré d'expertise en conception matérielle.
+
+Un certain nombre de composants sont nécessaires pour créer une superposition:
+- Paramètres de la carte
+- Interface PS-PL
+- Processeurs MicroBlaze Soft
+- Intégration Python/C
+- Python AsyncIO
+- API de superposition Python
+- Emballage Python
+
+## 9- Conception de superposition
+
+Une superposition se compose de deux parties principales; la conception PL (bitstream) et le fichier Tcl du
+schéma de principe du projet. La conception de superposition est une tâche spécialisée pour les ingénieurs en
+matériel. Cette section suppose que le lecteur a une certaine expérience de la conception numérique, de la
+construction de systèmes Zynq et des outils de conception Vivado.
+
+**Conception PL**
+
+Le logiciel Xilinx® Vivado est utilisé pour créer un design Zynq. Un fichier bitstream ou binaire (fichier .bit)
+sera généré et pourra être utilisé pour programmer le Zynq PL.
+
+Le concepteur de matériel est encouragé à prendre en charge la programmabilité dans l'adresse IP utilisée
+dans une superposition PYNQ. Une fois l'IP créée, la conception PL est réalisée de la même manière que
+toute autre conception Zynq. IP dans une superposition qui peut être contrôlée par PYNQ sera mappée en
+mémoire, connectée à GPIO. IP peut également avoir une connexion principale au PL. PYNQ fournit des
+bibliothèques Python pour s'interfacer avec la conception PL et qui peuvent être utilisées pour créer leurs
+propres pilotes. L'API Python pour une superposition sera et sera couverte dans les sections suivantes.
+Superposer le fichier Tcl.
+Le Tcl de la conception de bloc Vivado IP Integrator pour la conception PL est utilisé par PYNQ pour identifier automatiquement la configuration du système Zynq, IP, y compris les versions, les interruptions, les réinitialisations et autres signaux de contrôle. Sur la base de ces informations, certaines parties de la
+configuration du système peuvent être modifiées automatiquement à partir de PYNQ, les pilotes peuvent être
+automatiquement attribués, les fonctionnalités peuvent être activées ou désactivées et les signaux peuvent
+être connectés aux méthodes Python correspondantes.
+Le fichier Tcl doit être généré et fourni avec le fichier bitstream dans le cadre d'une superposition. Le fichier
+Tcl peut être généré dans Vivado en exportant le schéma de principe IP Integrator à la fin du processus de
+conception de superposition. Le fichier Tcl doit être fourni avec un flux binaire lors du téléchargement d'une
+superposition. La classe PYNQ PL analysera automatiquement le Tcl.
+Un fichier Tcl personnalisé ou créé manuellement peut être utilisé pour créer un projet Vivado, mais Vivado
+doit être utilisé pour générer et exporter le fichier Tcl pour le diagramme. Ce Tcl généré automatiquement
+doit garantir qu'il peut être analysé correctement par le PYNQ.
+10- Programmabilité
+Une superposition doit avoir une programmabilité post-bitstream pour permettre la personnalisation du
+système. Un certain nombre de blocs IP PYNQ réutilisables sont disponibles pour prendre en charge la
+programmabilité. Par exemple, un PYNQ MicroBlaze peut être utilisé sur les interfaces Pmod et Arduino.
+L'adresse IP des différentes superpositions peut être réutilisée pour fournir une configurabilité au moment de
+l'exécution.
+
+## 11- Paramètres Zynq PS
+
+Un projet Vivado pour une conception Zynq se compose de deux parties; la conception PL et les paramètres
+de configuration PS.
+L'image PYNQ utilisée pour démarrer la carte configure le Zynq PS au moment du démarrage. Cela
+corrigera la plupart de la configuration PS, y compris la configuration de la DRAM et l'activation des
+périphériques Zynq PS, y compris la carte SD, Ethernet, USB et UART qui sont utilisés par PYNQ.
+La configuration PS comprend également les paramètres des horloges système, y compris les horloges
+utilisées dans le PL. Les horloges PL peuvent être programmées au moment de l'exécution pour correspondre
+aux exigences de la superposition. Ceci est géré automatiquement par la classe PYNQ Overlay
+Pendant le processus de téléchargement d’une nouvelle superposition, la configuration de l’horloge sera
+analysée à partir du fichier Tcl de la superposition. Les nouveaux paramètres d'horloge de la superposition
+seront appliqués automatiquement avant le téléchargement de la superposition.
+
+## 12- Interfaces PS/PL
+
+Le Zynq dispose de 9 interfaces AXI entre le PS et le PL. Du côté PL, il y a 4x ports AXI Master HP (High
+Performance), 2x ports AXI GP (General Purpose), 2x ports AXI Slave GP et 1x AXI Master ACP port. Il
+existe également des contrôleurs GPIO dans le PS qui sont connectés au PL.
+
+Il existe quatre classes pynq qui sont utilisées pour gérer le mouvement des données entre les interfaces Zynq
+PS (y compris la PS DRAM) et PL.
+
+GPIO - Entrée/sortie à usage général  
+MMIO - E/S mappées en mémoire  
+Xlnk - Allocation de mémoire  
+DMA - Accès direct à la mémoire  
+
+La classe utilisée dépend de l'interface Zynq PS à laquelle l'IP est connecté et de l'interface de l'IP.
+Le code Python exécuté sur PYNQ peut accéder à une adresse IP connectée à un esclave AXI connecté à un
+port GP. MMIO peut être utilisé pour ce faire.
+
+L'IP connecté à un port maître AXI n'est pas sous le contrôle direct du PS. Le port maître AXI permet à l'IP
+d'accéder directement à la DRAM. Avant de faire cela, la mémoire doit être allouée à l'adresse IP à utiliser.
+La classe Xilink peut être utilisée pour cela. Pour un transfert de données plus performant entre PS DRAM et
+un IP, des DMA peuvent être utilisés. PYNQ fournit une classe DMA.
+
+Lors de la conception de votre propre superposition, vous devez tenir compte du type d'IP dont vous avez
+besoin et de la manière dont elle se connectera au PS. Vous devriez alors être en mesure de déterminer les
+classes dont vous avez besoin pour utiliser l'adresse IP.
