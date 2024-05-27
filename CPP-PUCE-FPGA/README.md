@@ -91,6 +91,10 @@ Jupyter NoteBook avec des entrées (2,5)
  <img alt="jupyter4" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/jupyter4.png" width=80% height=80%  title="jupyter4"/>
 
  
-### 13- Test du Programme overlay-somadd.y sans la présence de lipn.hwh
+### 14- Test du Programme overlay-somadd.y sans la présence de lipn.hwh
 
  <img alt="overlay jupyter" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/overlay-jupyter-sans-h.png" width=80% height=80%  title="overlay jupyter"/>
+
+### 14- Rajoutons notre design version 1 à l'algorithme KMeans : l'implémentation de la fonction som_add_2D sur FPGA
+
+ <img alt="design kmeans" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/notredesign-dans-KMeans.png" width=80% height=80%  title="design kmeans"/>
