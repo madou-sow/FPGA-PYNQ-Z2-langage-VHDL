@@ -219,3 +219,21 @@ print_prof_data()
 
 ```
 
+## 18 - Présentation KMeansWithFPGA-Copy1-somadd-sowV1.py avec une implémentation version 1 du FPGA
+
+KMeans++ Clustering est une classification de données de sorte que les données d'un même cluster soit
+similaire dans un sens. La tâche consiste à implémenter l'algorithme KMeans++ en créant une fonction qui
+prend 2 arguments K le nombre de clusters et N le nombre de données à classer. K est un entier positif et
+l'ensemble de données N est une liste de points dans un plan cartésien. Il a été rajouter une fonction de
+profilage permettant de connaître le comportement à l'exécution de K-Means, des fonctions, les temps passé
+dans chacune de d'elles et le nombre d'appel (exprimé en times). Les diverses fonctions dans le programme
+KMeans sont generate_point, somadd, nearest_cluster_center, kpp et lloyd. La description des fonctions sont
+dans le tableau d'en dessous
+
+| Fonction | Description | 
+| --- | --- |
+| generate_points | génère un ensemble de points aléatoires| 
+| somadd | renvoie la somme de 2 entiers |
+| nearest_cluster_center | renvoie la distance et l'indice du centre de cluster le plus proche |
+| kpp | initialise les centres des clusters | 
+| lloyd | recalcule à chaque itération les centres des clusters et affecte chaque point de nouveau au cluster dont le centre est le plus proche jusqu'à convergence |
