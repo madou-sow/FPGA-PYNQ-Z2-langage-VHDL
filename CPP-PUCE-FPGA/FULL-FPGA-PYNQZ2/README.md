@@ -85,7 +85,7 @@ montré dans l'image ci-dessous.
 
 ###### Table de vérité de Full Adder
   
- <img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/220px-Full-adder_logic_diagram.png" width=70% height=70%  title="tfull"/>
+ <img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/220px-Full-adder_logic_diagram.png" width=40% height=40%  title="tfull"/>
 
  ###### Diagramme logique Full Adder
 
