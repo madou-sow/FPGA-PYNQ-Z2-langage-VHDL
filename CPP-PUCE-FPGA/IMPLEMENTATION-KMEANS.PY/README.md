@@ -762,3 +762,13 @@ print_prof_data()
 | N nombre points = 30000 | - | 0,767 s | 0,000186 s | 0,000552 s | 47,509 s | 69,16 s |
 | Nombre d'appels | 1 time | 270000 times | 120000 times | 1 time | 1 time | |
 
+### 20.3 - KMeansWithFPGA-Copy1-somadd-sowV2.py avec K=3 clusters
+
+**Temps d'exécution moyen :**  *python3 kmeansWithFPGA-Copy1-somadd-sowV2.py 3 "N nombre points"*
+
+| Fonction | generate_points | som_add_2D | nearest_cluster_center | kpp | lloyd | |
+| --- | --- |  --- |  --- | --- | --- | --- |
+| N nombre points = 3000 | - | 0,0394 s | 0,000187 s | 0,000552 s | 4,737 s | 6,92 s |
+| Nombre d'appels | 1 time | 27000 times | 12000 times | 1 time | 1 time | |
+| N nombre points = 30000 | - | 0,769 s | 0,000195 s | 0,000573 s | 49,10 s | 71,69 s |
+| Nombre d'appels | 1 time | 270000 times | 120000 times | 1 time | 1 time | |
