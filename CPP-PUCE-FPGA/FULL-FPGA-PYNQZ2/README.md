@@ -81,7 +81,7 @@ montré dans l'image ci-dessous.
  
  ###### Schéma du Symbole pour un additionneur complet 1 bit avec Cin et Cout dessinés sur les côtés du bloc pour souligner leur utilisation dans un additionneur multi-bits
 
-<img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/tableveritéFulladder.png" width=30% height=30%  title="tfull"/>
+<img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/tableveritéFulladder.png" width=20% height=20%  title="tfull"/>
 
 ###### Table de vérité de Full Adder
   
