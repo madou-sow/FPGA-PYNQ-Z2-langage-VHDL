@@ -61,3 +61,16 @@ retard de
 La table de vérité pour l'additionneur complet est:
 
  <img alt="veriteadd" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/tableauveriteadd.png" width=70% height=70%  title="veriteadd"/>
+
+ Les ajouteurs complets sont un élément de base pour les nouveaux concepteurs numériques. De nombreux
+cours d'introduction à la conception numérique présentent des ajouts complets aux débutants. Une fois que
+vous comprenez comment fonctionne un additionneur complet, vous pouvez voir comment des circuits plus
+compliqués peuvent être construits en utilisant uniquement de simples portes. Je veux juste faire comprendre
+à quelqu'un de nouveau qu'en réalité, les concepteurs de FPGA ne codent pas des additionneurs complets à la
+main. Les outils sont suffisamment avancés pour savoir ajouter deux nombres ensemble. C'est toujours un
+bon exercice, c'est pourquoi il est présenté ici.
+Un seul additionneur complet a deux entrées à un bit, une entrée de report, une sortie de somme et
+une sortie de report.
+Beaucoup d'entre eux peuvent être utilisés ensemble pour créer un additionneur à effet d'ondulation
+qui peut être utilisé pour additionner de grands nombres ensemble. Un seul additionneur complet est
+montré dans l'image ci-dessous.
