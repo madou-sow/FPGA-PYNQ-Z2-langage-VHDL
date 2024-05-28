@@ -75,3 +75,14 @@ une sortie de report.
 Beaucoup d'entre eux peuvent être utilisés ensemble pour créer un additionneur à effet d'ondulation
 qui peut être utilisé pour additionner de grands nombres ensemble. Un seul additionneur complet est
 montré dans l'image ci-dessous.
+
+
+ <img alt="full" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/220px-1-bit_full-adder.png" width=70% height=70%  title="full"/>
+
+  <img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/tableveriteFulladder.png" width=70% height=70%  title="tfull"/>
+
+  
+  <img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/220px-Full-adder_logic_diagram.png" width=70% height=70%  title="tfull"/>
+
+   <img alt="addfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/additionneur-
+complet.png" width=70% height=70%  title="addfull"/>
