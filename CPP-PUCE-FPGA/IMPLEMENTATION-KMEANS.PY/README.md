@@ -742,7 +742,7 @@ print_prof_data()
 
 ### 20.1- Kmeans.py avec K=3 clusters
 
-| | Temps d'exécution moyen |
+| | | | | | | Temps d'exécution moyen |
 | --- | --- |  --- |  --- | --- | --- | --- |
 | Fonction | generate_points | sqr_distance_2D | nearest_cluster_center | kpp | lloyd | |
 | N nombre points = 3000 | - | 0,0383 s | 0,0000128 s | 0,0001588 s | 1,4039 s | 9,77 s |
