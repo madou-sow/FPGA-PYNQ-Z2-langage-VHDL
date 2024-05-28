@@ -84,5 +84,4 @@ montré dans l'image ci-dessous.
   
   <img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/220px-Full-adder_logic_diagram.png" width=50% height=50%  title="tfull"/>
 
-   <img alt="addfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/additionneur-
-complet.png" width=50% height=50%  title="addfull"/>
+   <img alt="addfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/additionneur-complet.png" width=50% height=50%  title="addfull"/>
