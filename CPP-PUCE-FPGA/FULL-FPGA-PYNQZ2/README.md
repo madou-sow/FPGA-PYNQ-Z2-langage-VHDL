@@ -59,3 +59,5 @@ retard de
 **T  <sub>c</sub> = T  <sub>XOR</sub> + T  <sub>AND</sub> + T  <sub>or</sub> = D + D + D = 3 D**
 
 La table de vérité pour l'additionneur complet est:
+
+ <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/figurePynqZ2.png" width=70% height=70%  title="numerique"/>
