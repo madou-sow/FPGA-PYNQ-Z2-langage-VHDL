@@ -209,109 +209,114 @@ kpp(points, cluster_centers)
 lenpts10 = len(points) >> 10
 changed = 0
 while True:
-# group element for centroids are used as counters
-for cc in cluster_centers:
-cc.x = 0
-cc.y = 0
-cc.group = 0
-for p in points:
-cluster_centers[p.group].group += 1
-cluster_centers[p.group].x += p.x
-cluster_centers[p.group].y += p.y
-##Modification SOW rajouter except ZeroDivisionError
-#for cc in cluster_centers:
-#
-cc.x /= cc.group
-#
-cc.y /= cc.group
-for cc in cluster_centers:
-try:
-cc.x /= cc.group
-cc.y /= cc.group
-except ZeroDivisionError:
-cc.group = 0
-# find closest centroid of each PointPtr
-changed = 0
-for p in points:
-min_i = nearest_cluster_center(p, cluster_centers)[0]
-if min_i != p.group:
-changed += 1
-p.group = min_i
-# stop when 99.9% of points are good
-if changed <= lenpts10:
-break
-for i, cc in enumerate(cluster_centers):
-cc.group = i
-return cluster_centers
+      # group element for centroids are used as counters
+      for cc in cluster_centers:
+            cc.x = 0
+            cc.y = 0
+            cc.group = 0
+
+      for p in points:
+            cluster_centers[p.group].group += 1
+            cluster_centers[p.group].x += p.x
+            cluster_centers[p.group].y += p.y
+      ##Modification SOW rajouter except ZeroDivisionError
+      #for cc in cluster_centers:
+      #       cc.x /= cc.group
+      #       cc.y /= cc.group
+      for cc in cluster_centers:
+            try:
+                  cc.x /= cc.group
+                  cc.y /= cc.group
+            except ZeroDivisionError:
+                  cc.group = 0
+
+      # find closest centroid of each PointPtr
+      changed = 0
+      for p in points:
+            min_i = nearest_cluster_center(p, cluster_centers)[0]
+            if min_i != p.group:
+                  changed += 1
+                  p.group = min_i
+      # stop when 99.9% of points are good
+      if changed <= lenpts10:
+            break
+      
+      for i, cc in enumerate(cluster_centers):
+            cc.group = i
+      return cluster_centers
+
 def print_eps(points, cluster_centers, W=400, H=400):
-Color = namedtuple("Color", "r g b");
-colors = []
-for i in range(len(cluster_centers)):
-colors.append(Color((3 * (i + 1) % 11)/11.0,
-(7 * i % 11)/11.0,
-(9 * i % 11)/11.0))
-max_x = max_y = -FLOAT_MAX
-min_x = min_y = FLOAT_MAX
+      Color = namedtuple("Color", "r g b");
+      colors = []
+      for i in range(len(cluster_centers)):
+          colors.append(Color((3 * (i + 1) % 11)/11.0, (7 * i % 11)/11.0,(9 * i % 11)/11.0))
+      max_x = max_y = -FLOAT_MAX
+      min_x = min_y = FLOAT_MAX
+
 for p in points:
-if max_x < p.x: max_x = p.x
-if min_x > p.x: min_x = p.x
-if max_y < p.y: max_y = p.y
-if min_y > p.y: min_y = p.y
+      if max_x < p.x: max_x = p.x
+      if min_x > p.x: min_x = p.x
+      if max_y < p.y: max_y = p.y
+      if min_y > p.y: min_y = p.y
 scale = min(W/(max_x - min_x),
 H/(max_y - min_y))
 cx = (max_x + min_x)/2
 cy = (max_y + min_y)/2
+
 #print "%%!PS-Adobe-3.0\n%%%%BoundingBox: -5 -5 %d %d" % (W + 10, H + 10)
+
 print ("%!PS-Adobe-3.0 EPSF-3.0")
 print ("%%Creator: someone or something")
 print ("%%%%BoundingBox: 0 0 %d %d" % (W + 1, H + 1))
 print ("%%LanguageLevel: 2")
 print ("%%Pages: 1")
 print ("%%DocumentData: Clean7Bit")
+
 print ("/l {rlineto} def /m {rmoveto} def\n" +
-"/c { .25 sub exch .25 sub exch .5 0 360 arc fill } def\n" +
-"/s { moveto -2 0 m 2 2 l 2 -2 l -2 -2 l closepath " +
-"
-gsave 1 setgray fill grestore gsave 3 setlinewidth" +
-" 1 setgray stroke grestore 0 setgray stroke }def")
+      "/c { .25 sub exch .25 sub exch .5 0 360 arc fill } def\n" +
+      "/s { moveto -2 0 m 2 2 l 2 -2 l -2 -2 l closepath " +
+      "
+      gsave 1 setgray fill grestore gsave 3 setlinewidth" +
+      " 1 setgray stroke grestore 0 setgray stroke }def")
+
 for i, cc in enumerate(cluster_centers):
-print ("%g %g %g setrgbcolor" %
-(colors[i].r, colors[i].g, colors[i].b))
-for p in points:
-if p.group != i:
-continue
-print ("%.3f %.3f c" % ((p.x - cx) * scale + W/2,
-(p.y - cy) * scale + H/2))
-print ("\n0 setgray %g %g s" % ((cc.x - cx) * scale + W/2,
-(cc.y - cy) * scale + H/2))
+      print ("%g %g %g setrgbcolor" %
+              (colors[i].r, colors[i].g, colors[i].b))
+      for p in points:
+            if p.group != i:
+                  continue
+            print ("%.3f %.3f c" % ((p.x - cx) * scale + W/2, (p.y - cy) * scale + H/2))
+      print ("\n0 setgray %g %g s" % ((cc.x - cx) * scale + W/2, (cc.y - cy) * scale + H/2))
 print ("\n%%%%EOF")
+
 if __name__ == '__main__':
-#import re
-import sys
-def usage():
-print("usage: python %s k n" % sys.argv[0])
-print("
-k = number of clusters")
-print("
-n = input size")
-print("
-Without parameters: k=7 n=30000")
-sys.exit(1)
-#print(sys.argv)
-if len(sys.argv) == 1:
-npoints = 3000 # default number of points
-k = 3 # default number of clusters
-else:
-if len(sys.argv) < 3:
-usage()
-try:
-k = int(sys.argv[1])
-except ValueError():
-usage()
-try:
-npoints = int(sys.argv[2])
-except ValueError():
-usage()
+        #import re
+        import sys
+        def usage():
+              print("usage: python %s k n" % sys.argv[0])
+              print("
+              k = number of clusters")
+              print("
+              n = input size")
+              print("
+              Without parameters: k=7 n=30000")
+              sys.exit(1)
+        #print(sys.argv)
+        
+        if len(sys.argv) == 1:
+              npoints = 3000 # default number of points
+              k = 3 # default number of clusters
+        else:
+              if len(sys.argv) < 3:
+        usage()
+        try:
+              k = int(sys.argv[1])
+        except ValueError():
+              usage()
+        try:
+              npoints = int(sys.argv[2])
+        except ValueError():
+              usage()
 points = generate_points(npoints, 10)
 cluster_centers = lloyd(points, k)
 #print_eps(points, cluster_centers)
