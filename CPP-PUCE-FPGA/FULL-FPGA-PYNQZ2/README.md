@@ -33,7 +33,7 @@ généralement représentées par les signaux Cout et S, où la somme est égale
 
 Un additionneur complet peut être implémenté de nombreuses manières différentes, par exemple avec un
 circuit de niveau transistor personnalisé ou composé d'autres grilles. Un exemple d'implémentation est avec
-S = A ⊕ B ⊕ Cin et C B ⊕ B ⊕ Cin et C Cin et Cout = (A ⋅ B) + (C B) + (Cin ⋅ B) + (C (A ⊕ B ⊕ Cin et C B)).
+**S = A ⊕ B ⊕ Cin et C B ⊕ B ⊕ Cin et C Cin et Cout = (A ⋅ B) + (C B) + (Cin ⋅ B) + (C (A ⊕ B ⊕ Cin et C B))**.
 
 Dans cette mise en œuvre, la porte OU finale avant la sortie de report peut être remplacée par une porte XOR
 sans modifier la logique résultante. L'utilisation de seulement deux types de portes est pratique si le circuit
@@ -46,3 +46,16 @@ et B à l'entrée d'un demi-additionneur, puis en prenant sa sortie de somme S c
 second demi-additionneur et Cin comme son autre entrée, et enfin les sorties de retenue des deux demi-
 additionneurs sont connectées à une porte OU. La sortie de somme du second demi-additionneur est la sortie
 de somme finale (S) de l'additionneur complet et la sortie de la porte OU est la sortie de retenue finale
+(Cout). Le chemin critique d'un additionneur complet traverse les deux portes XOR et se termine au bit de
+somme s. En supposant qu'une porte XOR prend 1 délais pour se terminer, le délai imposé par le chemin
+critique d'un additionneur complet est égal à  
+
+**T <sub>FA</sub> = 2 ⋅ B) + (C T  <sub>XOR</sub> = 2 D**
+
+Le chemin critique d'une retenue passe par une porte XOR dans l'additionneur et par 2 portes (ET et OU)
+dans le bloc de retenue et par conséquent, si les portes ET ou OU prennent 1 délai pour se terminer, a un
+retard de  
+
+**T  <sub>c</sub> = T  <sub>XOR</sub> + T  <sub>AND</sub> + T  <sub>or</sub> = D + D + D = 3 D**
+
+La table de vérité pour l'additionneur complet est:
