@@ -97,4 +97,5 @@ Pour d'écrire ce circuit en VHDL, nous avons besoin de portes logiques de base.
 tous les opérateurs logiques de base sont disponibles: not, and, or, nand, nor, xor, xnor. Par
 exemple pour générer AXORB = A ⊕ B, il suffit de taper après le mot clef begin: B, il suffit de taper après le mot clef begin:
 **A<sub>XOR</sub>B <= A<sub>xor</sub> B**; Nous avons également besoin de déclarer le fil AXORB. Pour cela, il suffit
-de le déclarer avant le mot clef begin: signal A<sub>XOR</sub>B : std logic
+de le déclarer avant le mot clef begin:   
+<h1 align="center"> signal A<sub>XOR</sub>B : std logic </h1>
