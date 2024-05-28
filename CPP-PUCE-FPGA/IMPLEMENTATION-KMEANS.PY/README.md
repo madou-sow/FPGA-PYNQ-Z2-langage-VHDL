@@ -219,7 +219,7 @@ print_prof_data()
 
 ```
 
-## 18 - Présentation KMeansWithFPGA-Copy1-somadd-sowV1.py avec une implémentation version 1 du FPGA
+## 18 - Présentation *KMeansWithFPGA-Copy1-somadd-sowV1.py* avec une implémentation version 1 du FPGA
 
 KMeans++ Clustering est une classification de données de sorte que les données d'un même cluster soit
 similaire dans un sens. La tâche consiste à implémenter l'algorithme KMeans++ en créant une fonction qui
