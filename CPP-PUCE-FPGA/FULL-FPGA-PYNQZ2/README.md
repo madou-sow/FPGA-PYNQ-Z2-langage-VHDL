@@ -92,3 +92,9 @@ montré dans l'image ci-dessous.
    <img alt="addfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/additionneur-complet.png" width=70% height=70%  title="addfull"/>
  
   ###### Schéma logique Full Adder
+
+Pour d'écrire ce circuit en VHDL, nous avons besoin de portes logiques de base. En VHDL,
+tous les opérateurs logiques de base sont disponibles: not, and, or, nand, nor, xor, xnor. Par
+exemple pour générer AXORB = A ⊕ B, il suffit de taper après le mot clef begin: B, il suffit de taper après le mot clef begin:
+**A<sub>XOR</sub>B <= A<sub>xor</sub> B**; Nous avons également besoin de déclarer le fil AXORB. Pour cela, il suffit
+de le déclarer avant le mot clef begin: signal A<sub>XOR</sub>B : std logic
