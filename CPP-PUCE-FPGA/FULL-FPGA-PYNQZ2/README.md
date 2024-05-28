@@ -50,7 +50,7 @@ de somme finale (S) de l'additionneur complet et la sortie de la porte OU est la
 somme s. En supposant qu'une porte XOR prend 1 délais pour se terminer, le délai imposé par le chemin
 critique d'un additionneur complet est égal à  
 
-**T <sub>FA</sub> = 2 ⋅ B) + (C T  <sub>XOR</sub> = 2 D**
+**T <sub>FA</sub> = 2 ⋅ T  <sub>XOR</sub> = 2 D**
 
 Le chemin critique d'une retenue passe par une porte XOR dans l'additionneur et par 2 portes (ET et OU)
 dans le bloc de retenue et par conséquent, si les portes ET ou OU prennent 1 délai pour se terminer, a un
