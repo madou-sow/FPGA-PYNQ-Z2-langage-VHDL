@@ -60,4 +60,4 @@ retard de
 
 La table de vérité pour l'additionneur complet est:
 
- <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/figurePynqZ2.png" width=70% height=70%  title="numerique"/>
+ <img alt="veriteadd" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/tableauveriteadd.png" width=70% height=70%  title="veriteadd"/>
