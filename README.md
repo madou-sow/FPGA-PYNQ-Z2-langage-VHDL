@@ -13,7 +13,7 @@
 3. Objets et types en VHDL
 4. Instructions en VHDL
 
-## OVERLAYS PYNQ-z2
+## OVERLAYS PYNQ-Z2
 1. CHARGEMENT D'UNE SUPERPOSITION (Loading an Overlay)
 2. Superpositions PYNQ-Z2 (Overlays PYNQ-Z2)
 3. Pmod interface : Peripheral Module interface
