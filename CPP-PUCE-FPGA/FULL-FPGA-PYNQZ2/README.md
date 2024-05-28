@@ -78,13 +78,17 @@ montré dans l'image ci-dessous.
 
 
  <img alt="full" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/220px-1-bit_full-adder.png" width=30% height=30%  title="full"/>
+ 
  ###### Schéma du Symbole pour un additionneur complet 1 bit avec Cin et Cout dessinés sur les côtés du bloc pour souligner leur utilisation dans un additionneur multi-bits
 
 <img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/tableveritéFulladder.png" width=30% height=30%  title="tfull"/>
+
 ###### Table de vérité de Full Adder
   
  <img alt="tfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/220px-Full-adder_logic_diagram.png" width=70% height=70%  title="tfull"/>
+
  ###### Diagramme logique Full Adder
 
    <img alt="addfull" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/additionneur-complet.png" width=70% height=70%  title="addfull"/>
+ 
   ###### Schéma logique Full Adder
