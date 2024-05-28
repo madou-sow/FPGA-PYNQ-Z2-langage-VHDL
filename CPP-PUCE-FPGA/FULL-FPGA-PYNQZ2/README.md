@@ -69,6 +69,7 @@ compliqués peuvent être construits en utilisant uniquement de simples portes. 
 à quelqu'un de nouveau qu'en réalité, les concepteurs de FPGA ne codent pas des additionneurs complets à la
 main. Les outils sont suffisamment avancés pour savoir ajouter deux nombres ensemble. C'est toujours un
 bon exercice, c'est pourquoi il est présenté ici.
+
 Un seul additionneur complet a deux entrées à un bit, une entrée de report, une sortie de somme et
 une sortie de report.
 Beaucoup d'entre eux peuvent être utilisés ensemble pour créer un additionneur à effet d'ondulation
