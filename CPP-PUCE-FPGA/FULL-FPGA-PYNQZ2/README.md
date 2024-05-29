@@ -112,7 +112,7 @@ La fenêtre New Project apparaît:
 • Cliquez sur Next  
 • Sélectionnez RTL Project  
 • Cliquez sur Next    
-• A l’aide des filtres, sélectionnez le circuit FPGA que nous allons utiliser : xc7z020clg400-1
+• A l’aide des filtres, sélectionnez le circuit FPGA que nous allons utiliser : xc7z020clg400-1  
 • Cliquez sur Next  
 • Cliquez sur Finish  
 
