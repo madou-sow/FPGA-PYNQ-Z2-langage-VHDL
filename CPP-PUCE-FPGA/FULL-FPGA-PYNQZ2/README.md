@@ -1,4 +1,4 @@
-## 22- Version Full FPGA avec PYNQ-Z2
+### 22- Version Full FPGA avec PYNQ-Z2
 A l'aide des Outils Vivado IP integrator, l'on va réaliser un simple additionneur complet (full adder) en
 utilisant un langage de description matérielle : VHDL. Nous allons ensuite tester le full adder sur la carte
 PYNQ-Z2 de la société XILINX. Les différentes étapes sont
@@ -10,7 +10,7 @@ PYNQ-Z2 de la société XILINX. Les différentes étapes sont
 - faire une synthèse, le placement, le routage et la génération de bit stream  
 - reconfigurer le circuit FPGA de la carte  
   
-## 22.1- Qu'est-ce que c'est qu'un adder ou additionneur en Électronique
+### 22.1- Qu'est-ce que c'est qu'un adder ou additionneur en Électronique
 Un additionneur est un circuit numérique qui effectue l'addition de nombres. Dans de nombreux ordinateurs
 et autres types de processeurs, des additionneurs sont utilisés dans les unités arithmétiques logiques ou ALU.
 Ils sont également utilisés dans d'autres parties du processeur, où ils sont utilisés pour calculer des adresses,
@@ -22,7 +22,7 @@ sur des nombres binaires. Dans les cas où le complément à deux ou le complém
 représenter des nombres négatifs, il est trivial de modifier un additionneur en un additionneur-soustracteur.
 D'autres représentations de nombres signés nécessitent plus de logique autour de l'additionneur de base.
 
-## 22.2- Full adder (Additionneur complet)
+### 22.2- Full adder (Additionneur complet)
 **Additionneur complet**  
 Un additionneur complet ajoute des nombres binaires et tient compte des valeurs reportées aussi bien en
 entrée qu'en sortie. Un additionneur complet d'un bit ajoute trois nombres d'un bit, souvent écrits comme A,
@@ -100,7 +100,7 @@ exemple pour générer AXORB = A ⊕ B, il suffit de taper après le mot clef be
 de le déclarer avant le mot clef begin:   
 <p align="center"> <B> signal A<sub>XOR</sub>B : std logic </B></p>
 
-## 22.3- Procédure
+### 22.3- Procédure
 Lancez Xilinx Vivado en choisissant la commande correspondante Vivado 2019.x,
 
 Créez un projet :  
@@ -111,3 +111,20 @@ La fenêtre New Project apparaît:
 • Project Location : chemin de sauvegarde du projet et des fichiers associés  
 • Cliquez sur Next  
 • Sélectionnez RTL Project  
+• Cliquez sur Next    
+• A l’aide des filtres, sélectionnez le circuit FPGA que nous allons utiliser : xc7z020clg400-1
+• Cliquez sur Next  
+• Cliquez sur Finish  
+
+NB : A tout moment il est possible de changer ces informations en cliquant sur Project Settings dans la fenêtre Flow Navigator sur la gauche.
+Le projet vide est maintenant créer. Nous allons à présent créer un fichier source qui contiendra la description du full adder, et l’ajouter au projet
+
+Pour ajouter une nouvelle source faites : Code VDHL pour un additionneur complet utilisant le Modèle Structuré  
+• File > Add Sources. :add3bits_tb et add3bits  
+• Sélectionnez Add or Create Design Sources.  
+• Cliquez sur Create File  
+• File Type: VHDL  
+• File name: full adder  
+• File location: Local to Project  
+• Cliquez sur Create File  
+• Cliquez sur Finish  
