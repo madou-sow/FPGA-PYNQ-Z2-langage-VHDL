@@ -266,3 +266,23 @@ end add3bits_tb;
 <img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/select-finish.png" width=70% height=70%  title="hls"/>
 
 ###### Figure 40 : Fin et Résumé
+
+### 22.4- Pour simuler, cliquez sur Run Simulation dans le panneau Flow Navigator → Simulation.
+
+
+<img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/simulation-avec-1.png" width=70% height=70%  title="hls"/>
+
+Les étapes de la simulation sont affichées dans la TCL console. Vous pouvez y observer les erreurs
+de compilation ainsi que les messages de type assert-report insérés dans votre code, et qui ont
+pour but de générer des messages d’erreur et des messages informatifs. Ensuite, le résultat de la simulation
+peut être visualisé dans un chronogramme.
+
+Le simulateur Vivado permet aussi de forcer manuellement la valeur des signaux, c’est à dire sans
+passer par un banc d’essai. Cette fonctionnalité peut être utile pour effectuer un test rapide pour
+vérifier le comportement de votre circuit. Cependant, en général il est toujours préférable
+d’utiliser un banc d’essai, ce qui documente votre procédure de test et facilite l’évolution de vos
+tests au fur et à mesure que vous développez la fonctionnalité de votre code.
+
+
+
+<img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/change-value-constante-0.png" width=70% height=70%  title="hls"/>
