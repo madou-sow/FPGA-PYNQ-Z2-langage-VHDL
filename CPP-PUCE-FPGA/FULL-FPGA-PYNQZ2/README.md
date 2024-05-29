@@ -250,6 +250,11 @@ end add3bits_tb;
 ```
 ###### add3bits_tb.vhd
 
- <img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/ip-creat-projet-ipfulladder.png" width=70% height=70%  title="hls"/>
+ <img alt="vivado1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/ip-creat-projet-ipfulladder.png" width=70% height=70%  title="vivado1"/>
 
 ###### Créez le projet
+
+
+ <img alt="hls" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/addfileipaddervh.png" width=70% height=70%  title="hls"/>
+
+###### sélectionnez les 2 fichiers
