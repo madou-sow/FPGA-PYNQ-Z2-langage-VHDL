@@ -116,7 +116,7 @@ La fenêtre New Project apparaît:
 • Cliquez sur Next  
 • Cliquez sur Finish  
 
-NB : A tout moment il est possible de changer ces informations en cliquant sur Project Settings dans la fenêtre Flow Navigator sur la gauche.
+**NB :** A tout moment il est possible de changer ces informations en cliquant sur Project Settings dans la fenêtre Flow Navigator sur la gauche.
 Le projet vide est maintenant créer. Nous allons à présent créer un fichier source qui contiendra la description du full adder, et l’ajouter au projet
 
 Pour ajouter une nouvelle source faites : Code VDHL pour un additionneur complet utilisant le Modèle Structuré  
