@@ -99,3 +99,15 @@ exemple pour générer AXORB = A ⊕ B, il suffit de taper après le mot clef be
 **A<sub>XOR</sub>B <= A<sub>xor</sub> B**; Nous avons également besoin de déclarer le fil AXORB. Pour cela, il suffit
 de le déclarer avant le mot clef begin:   
 <p align="center"> <B> signal A<sub>XOR</sub>B : std logic </B></p>
+
+## 22.3- Procédure
+Lancez Xilinx Vivado en choisissant la commande correspondante Vivado 2019.x,
+
+Créez un projet :  
+File>New Project  
+La fenêtre New Project apparaît:  
+• Cliquez sur Next  
+• Project Name : nom de votre projet : full_adder (attention pas d’espace)  
+• Project Location : chemin de sauvegarde du projet et des fichiers associés  
+• Cliquez sur Next  
+• Sélectionnez RTL Project  
