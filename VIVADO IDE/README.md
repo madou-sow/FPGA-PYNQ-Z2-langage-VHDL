@@ -25,7 +25,10 @@ Pendant l’étape de disposition de l’implémentation, il faut assigner des p
 FPGA à des ports d’entrée et de sortie de son design. Pour le design présent, les ports d’entrée
 sont X, Y et Cin, et les ports de sortie sont Cout et S.
 L’assignation des ports se fait par l’entremise d’un fichier de contraintes avec l’extension « .xdc»
-(pour xilinx design constraints file).
+(pour xilinx design constraints file). 
+
+Ouvrez un éditeur de texte (comme Notepad++) et copiez-y les lignes suivantes. On suppose que
+vous utilisez la planchette PYNQ-Z2 du fichier pynq-z2_c.xdc.
 
 
 
