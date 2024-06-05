@@ -19,7 +19,8 @@ utilisés, et choisir les pattes du FPGA correspondant aux ports d’entrée et 
 • la configuration (configuration) : convertir toute cette information en un fichier pouvant être
 téléchargé sur le FPGA pour le programmer.
 
-## 32- Ports d’entrée et de sortie
+## 32- Ports d'entrée et de sortie 
+
 Pendant l’étape de disposition de l’implémentation, il faut assigner des pattes spécifiques du
 FPGA à des ports d’entrée et de sortie de son design. Pour le design présent, les ports d’entrée
 sont X, Y et Cin, et les ports de sortie sont Cout et S.
