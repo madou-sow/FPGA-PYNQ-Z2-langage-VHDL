@@ -1,6 +1,6 @@
-## Synthèse et implémentation du projet
+## Synthèse et implémentation du projet
+## 31- Description
 
-## 31- Description
 La synthèse d’un circuit consiste à traduire sa description en blocs disponibles dans la technologie
 utilisée. Par exemple, pour un circuit décrit avec un schéma et qui doit être réalisé sur un FPGA,
 le processus de synthèse convertit et regroupe les portes logiques du schéma en composantes
@@ -25,3 +25,6 @@ FPGA à des ports d’entrée et de sortie de son design. Pour le design présen
 sont X, Y et Cin, et les ports de sortie sont Cout et S.
 L’assignation des ports se fait par l’entremise d’un fichier de contraintes avec l’extension « .xdc»
 (pour xilinx design constraints file).
+
+
+
