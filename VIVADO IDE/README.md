@@ -7,11 +7,15 @@ le processus de synthèse convertit et regroupe les portes logiques du schéma e
 réalisables sur le FPGA choisi. Pour un circuit décrit en VHDL, la synthèse analyse le code et infère
 des composantes logiques correspondantes à son comportement.
 L’implémentation du circuit est divisée en quatre sous étapes :
+
 • la transformation (mapping) : regrouper les composantes obtenues lors de la synthèse dans des
 blocs spécifiques du FPGA ;
+
 • la disposition (placement) : choisir des endroits spécifiques sur le FPGA où disposer les blocs
 utilisés, et choisir les pattes du FPGA correspondant aux ports d’entrée et de sortie ;
+
 • le routage (routing) : établir des connexions électriques entre les blocs utilisés ; et,
+
 • la configuration (configuration) : convertir toute cette information en un fichier pouvant être
 téléchargé sur le FPGA pour le programmer.
 
