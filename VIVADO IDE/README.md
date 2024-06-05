@@ -40,5 +40,18 @@ set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports { Y}]
 set_property -dict {PACKAGE_PIN T14 IOSTANDARD LVCMOS33} [get_ports { Cin }]
 ```
 
+On peut noter que chaque port est identifié dans le fichier, exactement comme il apparaît dans
+le code VHDL. Le symbole du dièse (#) indique que le reste de la ligne est un commentaire pour
+les fichiers .xdc. Sauvegardez le fichier dans le même répertoire que les autres fichiers sources de
+votre design, sous le nom de pynq-z2_c.xdc. Puis, dans Project Manager, faites un clic droit sur
+constraints, cliquez sur Add Sources... comme le montre la figure suivante :
+
+
+ <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/ip-creat-projet-ipfulladder.png" width=70% height=70%  title="numerique"/>
+
+
+
+
+
 
 
