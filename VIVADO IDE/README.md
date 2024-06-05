@@ -50,6 +50,12 @@ constraints, cliquez sur Add Sources... comme le montre la figure suivante :
  <img alt="numerique" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/contraint-xdc.png" width=70% height=70%  title="numerique"/>
 
 
+ <img alt="numerique" src=" https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/fichier-pynqZ2-xdc.png" width=70% height=70%  title="numerique"/>
+
+ 
+
+
+
 
 
 
