@@ -1,6 +1,6 @@
 ## Synthèse et implémentation du projet
 
-## Description
+## 31- Description
 La synthèse d’un circuit consiste à traduire sa description en blocs disponibles dans la technologie
 utilisée. Par exemple, pour un circuit décrit avec un schéma et qui doit être réalisé sur un FPGA,
 le processus de synthèse convertit et regroupe les portes logiques du schéma en composantes
@@ -14,7 +14,8 @@ utilisés, et choisir les pattes du FPGA correspondant aux ports d’entrée et 
 • le routage (routing) : établir des connexions électriques entre les blocs utilisés ; et,
 • la configuration (configuration) : convertir toute cette information en un fichier pouvant être
 téléchargé sur le FPGA pour le programmer.
-32- Ports d’entrée et de sortie
+
+## 32- Ports d’entrée et de sortie
 Pendant l’étape de disposition de l’implémentation, il faut assigner des pattes spécifiques du
 FPGA à des ports d’entrée et de sortie de son design. Pour le design présent, les ports d’entrée
 sont X, Y et Cin, et les ports de sortie sont Cout et S.
