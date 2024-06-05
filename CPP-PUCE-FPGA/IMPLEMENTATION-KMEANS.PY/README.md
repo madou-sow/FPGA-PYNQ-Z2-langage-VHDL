@@ -772,3 +772,7 @@ print_prof_data()
 | Nombre d'appels | 1 time | 27000 times | 12000 times | 1 time | 1 time | |
 | N nombre points = 30000 | - | 0,769 s | 0,000195 s | 0,000573 s | 49,10 s | 71,69 s |
 | Nombre d'appels | 1 time | 270000 times | 120000 times | 1 time | 1 time | |
+
+
+
+ <img alt="RecapTests" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/tableau-recap-tests.png" width=50% height=50%  title="RecapTests"/>
