@@ -30,5 +30,15 @@ L’assignation des ports se fait par l’entremise d’un fichier de contrainte
 Ouvrez un éditeur de texte (comme Notepad++) et copiez-y les lignes suivantes. On suppose que
 vous utilisez la planchette PYNQ-Z2 du fichier pynq-z2_c.xdc.
 
+```
+## LEDs
+set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports { Cout }]
+set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports { S }]
+## Commutateurs
+set_property -dict {PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports { X }]
+set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33} [get_ports { Y}]
+set_property -dict {PACKAGE_PIN T14 IOSTANDARD LVCMOS33} [get_ports { Cin }]
+```
+
 
 
