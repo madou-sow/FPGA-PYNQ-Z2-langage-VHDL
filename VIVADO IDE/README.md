@@ -104,3 +104,5 @@ Il existe une autre façon est de faire un clic droit sur l'appareil et de séle
 <img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/ouvertureSessionHardWarePynqZ2.png" width=70% height=70%  title="bitstream"/>
 
 <img alt="bitstream2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/pynqZ2bitstream2.png" width=70% height=70%  title="bitstream2"/>
+
+
