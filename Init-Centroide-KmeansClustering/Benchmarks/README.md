@@ -83,6 +83,7 @@ The sum of the first (array([[ 2.61827571, 4.7215674 ],
 === Méthode 9 ===
 Temps d'exécution "online_kmeans": 00:00:00.160 sec
 
+
 === Méthode 10 ===
 Function "online_kmeans" took 0.14835279900034948 seconds to complete.
 ```
@@ -90,3 +91,5 @@ Function "online_kmeans" took 0.14835279900034948 seconds to complete.
 **Conversion d'un Code Python vers un Code C++**
 
 [temps-execution-online-kmeans.py](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/Init-Centroide-KmeansClustering/code/temps-execution-online-kmeans.py) ==> [temps-execution-online-kmeans.cpp](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/Init-Centroide-KmeansClustering/code/temps-execution-online-kmeans.cpp)
+
+### Compilation de kmeans.beautifier.cpp,kmeansPlusPlus.beautifier.cpp,main.beautifier.cpp en langage C avec Vivado HLS
