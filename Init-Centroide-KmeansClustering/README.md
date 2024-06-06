@@ -209,3 +209,29 @@ plt.scatter(centroids[:, 0], centroids[:, 1],c='r', s=100)
 
 ```
 
+## 4.7- Initialisation de la fonction kmeansplus_plus
+
+```
+Methode 1
+kmeansplus_plus(X, 3)
+array([[ 0.66882778, 5.95522801],
+[ 5.73899416, -5.90023208],
+[ 6.46714884, 9.42265861]])
+
+Methode 2  
+kmeansplus_plus_centroids = onlink.kmeansplus_plus(X, n_clusters)
+print(kmeansplus_plus_centroids)
+[[ 0.66882778 5.95522801]
+[10.39837029 -0.53846711]
+[ 5.030884
+-5.73054702]
+[ 2.43406978 6.45131736]]
+
+Tracé des centroïdes avec la fonction kmeansplus_plus  
+
+plt.scatter(X[:, 0], X[:, 1])
+centroids = kmeansplus_plus(X, 3)
+plt.scatter(centroids[:, 0], centroids[:, 1],c='r', s=100)
+<matplotlib.collections.PathCollection at 0x7f913cc8a910>
+
+```
