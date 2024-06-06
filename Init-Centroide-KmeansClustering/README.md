@@ -165,3 +165,36 @@ centroids = online_kmeans(X, 3)
 plt.scatter(centroids[:, 0], centroids[:, 1],c='r', s=100)
 <matplotlib.collections.PathCollection at 0x7f913cdc3490>
 ``` 
+
+## 4.5- Initialisation avec la fonction modified_fully_online
+
+```
+Methode 1
+
+modified_fully_online(X, 3)
+array([[ 6.19393218, -3.19548236],
+[ 7.03273395, -6.29455273],
+[ 8.58500677, -0.55985579],
+[ 9.80523306, -1.82230884],
+[ 9.12834325, -1.04247409],
+[ 3.4924673 , 4.2556699 ],
+[ 2.29247953, 5.7935208 ],
+[ 3.94356355, 4.43644954],
+[ 4.53704619, -5.77616485],
+[ 7.44860203, 7.38710623]])
+
+Methode 2
+
+modified_fully_online_centroids = onlink.modified_fully_online(X, n_clusters)
+print(modified_fully_online_centroids)
+[[11.16919824 -0.15316666]
+[ 2.29247953 5.7935208 ]
+[ 4.93306851 -5.70292798]
+[ 0.20343155 7.74917905]
+[ 9.42135429 -1.81247762]
+[ 5.00747147 -4.95714911]
+[ 1.98433261 5.2456394 ]
+[ 3.08093425 6.39956266]
+[ 9.25780094 -0.34322652]
+[ 6.02012917 9.71546134]]
+``` 
