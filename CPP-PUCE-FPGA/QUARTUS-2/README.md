@@ -35,5 +35,28 @@ d'erreur et d'avertissement rendent les modifications de conception aussi simple
 chaque étape du processus de conception, le logiciel Quartus II vous permet de vous concentrer
 facilement sur votre conception et non sur l'utilisation du logiciel.
 
-La superbe intégration du logiciel Quartus II améliore votre efficacité et votre productivité, vous
-donnant le contrôle de votre environnement de conception logique.
+La superbe intégration du logiciel Quartus II améliore votre efficacité et votre productivité, vous donnant le contrôle de votre environnement de conception logique.
+
+### 2- Développer les capacités de conception :
+
+
+Le logiciel Quartus II est un progiciel entièrement intégré et indépendant de l'architecture pour la conception de logique avec des dispositifs logiques programmables (PLD) Altera, notamment Arria
+II, Arria GX, Arria V, Cyclone, Cyclone II, Cyclone III, Cyclone IV, Cyclone V, HardCopy II,
+HardCopy III, HardCopy IV, MAX II, MAX V, MAX 3000A, MAX 7000AE, MAX 7000B, MAX
+7000S, Stratix, Stratix II, Stratix II GX, Stratix III, Stratix IV, Stratix V et Stratix GX. Le logiciel Quartus.
+``` 
+II offre une gamme complète de capacités de conception logique:
+  Entrée de conception à l'aide de schémas, de schémas fonctionnels, AHDL, VHDL et Verilog HDL
+  Modification du plan d'étage
+  Conception incrémentielle LogicLock
+  Synthèse logique puissante
+  Simulation fonctionnelle et temporelle
+  Analyse du timing
+  Analyse logique intégrée avec l'analyseur logique SignalTap II
+  Importation, création et liaison de fichiers source de logiciels pour produire des fichiers de programmation
+  Projets combinés de compilation et de logiciels
+ Localisation d'erreur automatique
+  Programmation et vérification des appareils
+
+
+
