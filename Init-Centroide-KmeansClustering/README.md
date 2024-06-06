@@ -183,6 +183,7 @@ array([[ 6.19393218, -3.19548236],
 [ 4.53704619, -5.77616485],
 [ 7.44860203, 7.38710623]])
 
+
 Methode 2
 
 modified_fully_online_centroids = onlink.modified_fully_online(X, n_clusters)
@@ -197,4 +198,14 @@ print(modified_fully_online_centroids)
 [ 3.08093425 6.39956266]
 [ 9.25780094 -0.34322652]
 [ 6.02012917 9.71546134]]
-``` 
+```
+## 4.6- Tracé des centroides avec la fonction modified_fully_online
+
+```
+plt.scatter(X[:, 0], X[:, 1])
+centroids = modified_fully_online(X, 3)
+plt.scatter(centroids[:, 0], centroids[:, 1],c='r', s=100)
+<matplotlib.collections.PathCollection at 0x7f913c230910>
+
+```
+
