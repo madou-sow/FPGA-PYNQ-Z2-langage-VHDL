@@ -99,3 +99,67 @@ Function "online_kmeans" took 0.14835279900034948 seconds to complete.
 
 <img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comp-debug.png" width=50% height=50%  title="Bits"/>
 <img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/Resultat-compilation.png" width=50% height=50%  title="Bits"/>
+
+```
+Voici les résultats de la compilation avec VHLS
+iteration 0 sum 876727
+iteration 1 sum 529312
+iteration 2 sum 264389
+iteration 3 sum 40489.5
+iteration 4 sum 15699.5
+iteration 5 sum 9944.76
+iteration 6 sum 11484.8
+iteration 7 sum 18463.5
+iteration 8 sum 42912.5
+iteration 9 sum 40955.4
+iteration 10 sum 19925.9
+iteration 11 sum 6942.16
+iteration 12 sum 2175.41
+iteration 13 sum 2845.68
+iteration 14 sum 4250.19
+iteration 15 sum 3054.76
+iteration 16 sum 1227.69
+iteration 17 sum 983.915
+iteration 18 sum 1691.66
+iteration 19 sum 715.105
+iteration 20 sum 316.992
+iteration 21 sum 782.148
+iteration 22 sum 2043.04
+iteration 23 sum 755.202
+iteration 24 sum 665.291
+iteration 25 sum 648.511
+iteration 26 sum 407.428
+iteration 27 sum 305.98
+iteration 28 sum 946.401
+iteration 29 sum 1494.07
+iteration 30 sum 2137.8
+iteration 31 sum 1444.85
+iteration 32 sum 3339.79
+iteration 33 sum 4979.74
+iteration 34 sum 5629.31
+iteration 35 sum 5650.39
+iteration 36 sum 4426.35
+iteration 37 sum 2934.91
+iteration 38 sum 2578.32
+iteration 39 sum 2826.86
+iteration 40 sum 2216.59
+iteration 41 sum 2557.25
+iteration 42 sum 860.549
+iteration 43 sum 876.879
+iteration 44 sum 0
+calculate time 1.13162
+Operation successfully performed
+----------------- kmeans Plus Plus -----------------
+iteration 0 sum 516522
+iteration 1 sum 104513
+iteration 2 sum 49736.7
+iteration 3 sum 27383.9
+iteration 4 sum 9389.86
+iteration 5 sum 3785
+iteration 6 sum 779.274
+iteration 7 sum 0
+calculate time 0.380654
+Operation successfully performed
+
+
+```
