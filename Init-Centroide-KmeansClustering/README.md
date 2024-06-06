@@ -52,3 +52,30 @@ l'espace qui contient des points de données existants; vous pouvez essayer de t
 données le plus central, par opposition à une sélection aléatoire, et procéder avec K-Means ++ à partir de là;
 vous pouvez échanger l'opération moyenne post-sommation pour une alternative dans le partitionnement
 naïf.
+
+### 2.1- Initialisation Centroïd et Scikit-Learn
+
+Nous utiliserons Scikit-Learn pour effectuer notre Clustering :
+
+
+### 2.2- Méthode d'initialisation du centre de gravité disponibles :
+
+- 'KMeans ++': sélectionne les centres de cluster initiaux pour le Clustering KMeans de manière
+intelligente pour accélérer la convergence.  
+- 'Random': choisissez n_clusters observations (lignes) au hasard à partir des données des centres de gravité initiaux.  
+- Si un ndarray est passé, il doit être de forme (n_clusters, n_features) et donner les centres initiaux.  
+- Si un appel est passé, il doit prendre les arguments X, n_clusters, un état aléatoire et retourner une initialisation.
+  
+Notre objectif est de comparer et inspecter les centres de gravité initialisés :  
+- Nous ne pouvons pas le faire avec les implémentations de Scikit-Learn  
+- Nous utiliserons nos propres implémentations des 3 méthodes discutées ci-dessus, à savoir
+l'initialisation aléatoire des centroïdes, K-Means ++ et partitionnement naïf.  
+- Nous utiliserons nos implémentations indépendantes de Scikit-Learn pour créer nos centres de
+gravité et les transmettre en tant que ndarray au moment du Clustering  
+- nous pouvons également utiliser l'option callable, par opposition à l'option ndarray, et intégrer l'initialisation du centroïde dans l'exécution de K-Means Scikit-Learn, mais cela nous ramène à la case départ avec l'impossibilité d'examiner et de comparer ces centroïdes avant le Clustering  
+- Cela dit, le fichier initialize_centroids.py contient nos implémentations d'initialisation centroïde avec les fonctions :  
+- random : pour générer des centres de gravité de cluster aléatoires  
+- plus_plus : pour générer des centres de gravité de cluster à l'aide de l'algorithme KMeans ++
+naive_sharding : pour générer des centres de gravité de cluster à l'aide d'un algorithme de
+partitionnement naïf déterministe  
+- _ get _ mean : Vfunc vectorisable pour obtenir des moyennes de colonnes de fragments additionnés
