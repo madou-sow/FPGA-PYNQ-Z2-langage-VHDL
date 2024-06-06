@@ -103,6 +103,6 @@ Il existe une autre façon est de faire un clic droit sur l'appareil et de séle
 En Cliquant sur Program pour programmer le FPGA. Le voyant DONE s'allume lorsque l'appareil est
 programmé.
 
-<img alt="bitstream2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/pynqZ2bitstream2.png" width=50% height=50%  title="bitstream2"/>
+<img alt="bitstream2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/pynqZ2bitstream2.jpg" width=50% height=50%  title="bitstream2"/>
 
 
