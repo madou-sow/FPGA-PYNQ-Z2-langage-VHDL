@@ -228,7 +228,6 @@ print(kmeansplus_plus_centroids)
 [ 2.43406978 6.45131736]]
 
 Tracé des centroïdes avec la fonction kmeansplus_plus  
-
 plt.scatter(X[:, 0], X[:, 1])
 centroids = kmeansplus_plus(X, 3)
 plt.scatter(centroids[:, 0], centroids[:, 1],c='r', s=100)
