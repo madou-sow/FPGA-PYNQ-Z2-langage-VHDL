@@ -46,17 +46,17 @@ HardCopy III, HardCopy IV, MAX II, MAX V, MAX 3000A, MAX 7000AE, MAX 7000B, MAX
 7000S, Stratix, Stratix II, Stratix II GX, Stratix III, Stratix IV, Stratix V et Stratix GX. Le logiciel Quartus.
 ``` 
 II offre une gamme complète de capacités de conception logique:
-  Entrée de conception à l'aide de schémas, de schémas fonctionnels, AHDL, VHDL et Verilog HDL
-  Modification du plan d'étage
-  Conception incrémentielle LogicLock
-  Synthèse logique puissante
-  Simulation fonctionnelle et temporelle
-  Analyse du timing
-  Analyse logique intégrée avec l'analyseur logique SignalTap II
-  Importation, création et liaison de fichiers source de logiciels pour produire des fichiers de programmation
-  Projets combinés de compilation et de logiciels
- Localisation d'erreur automatique
-  Programmation et vérification des appareils
+  - Entrée de conception à l'aide de schémas, de schémas fonctionnels, AHDL, VHDL et Verilog HDL
+  - Modification du plan d'étage
+  - Conception incrémentielle LogicLock
+  - Synthèse logique puissante
+  - Simulation fonctionnelle et temporelle
+  - Analyse du timing
+  - Analyse logique intégrée avec l'analyseur logique SignalTap II
+  - Importation, création et liaison de fichiers source de logiciels pour produire des fichiers de programmation
+  - Projets combinés de compilation et de logiciels
+  - Localisation d'erreur automatique
+  - Programmation et vérification des appareils
 
 
 
