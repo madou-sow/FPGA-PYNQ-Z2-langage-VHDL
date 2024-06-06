@@ -10,3 +10,5 @@
 ## 5- Présentation *KMeansWithFPGA-Copy1-somadd-sowV2.py* avec une implémentation version 2 du FPGA
 
 ## 6- Tests et Observations
+
+## 7- Utilisation de VIVADO 2019.2
