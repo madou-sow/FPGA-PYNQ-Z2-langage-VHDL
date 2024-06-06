@@ -106,7 +106,7 @@ import onlin_kmeans as onlink
 De toute évidence, nous aurons besoin de certaines données. Nous allons créer un petit ensemble synthétique
 afin d'avoir le contrôle sur la délimitation claire de nos grappes (voir Figure 1).
 
-``
+```
 from sklearn.datasets import make_blobs
 n_samples = 250
 n_features = 2
@@ -116,6 +116,6 @@ max_iter = 100
 X, y = make_blobs(n_samples=n_samples,
 n_features=n_features,centers=n_clusters,random_state=random_state)
 fig=plt.figure(figsize=(8,8), dpi=80, facecolor='w', edgecolor='k')
-plt.scatter(X[:, 0], X[:, 1]);```
+plt.scatter(X[:, 0], X[:, 1]);
 
 ```
