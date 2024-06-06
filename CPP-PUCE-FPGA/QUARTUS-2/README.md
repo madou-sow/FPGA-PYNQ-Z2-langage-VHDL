@@ -115,3 +115,6 @@ une consommation d'énergie dynamique significative.
 
 ### 6- Synthèse avec l’outil Xilinx de [quicksort.cpp](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/CPP-PUCE-FPGA/QUARTUS-2/code/quicksort.cpp) sans le module random et sans récursivité
 
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exploit-synthese-quicksort1.png" width=50% height=50%  title="Bits"/>
+
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exploit-synthese-quicksort2.png" width=50% height=50%  title="Bits"/>
