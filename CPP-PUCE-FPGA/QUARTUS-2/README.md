@@ -94,7 +94,7 @@ simulateur. Le logiciel Quartus II prend en charge les flux de simulation automa
 personnalisés.
 
 
-### 5-Développer la sélection de l'appareil et les ressources utilisées par la conception
+### 5- Développer la sélection de l'appareil et les ressources utilisées par la conception
 
 Différentes familles d'appareils ont des caractéristiques de puissance différentes. Des paramètres tels que la technologie de processus, la tension d'alimentation, la conception électrique et l'architecture de l'appareil affectent tous la consommation d'énergie. Au sein des familles d'appareils, les appareils plus gros consomment souvent plus d'énergie que les appareils plus petits.
 Le choix de l'ensemble de l'appareil affecte également la capacité de l'appareil à dissiper la chaleur et peut influencer la solution de refroidissement requise. Dans tous les cas, vous devez consulter les spécifications de l'appareil pour obtenir des informations sur les caractéristiques d'alimentation de cet appareil.
