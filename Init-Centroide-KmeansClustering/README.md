@@ -87,4 +87,16 @@ Le fichier onlin_kmeans.py contient des fonctions que nous allons importer et ex
 
 - online_kmeans : K-Means en ligne utilisant la descente de gradient stochastique  
 - fully_online
-- et modified_fully_online  
+- et modified_fully_online
+
+Avec ce fichier placé dans le même répertoire que celui où j'ai démarré le Notebook Jupyter, je peux procéder comme suit, en commençant par les importations des bibliothèques et en utilisant le module **onlin_kmeans** à la place de **sklearn.cluster**  
+
+```
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+#from sklearn.cluster import KMeans
+import onlin_kmeans as onlink
+#import initialize_centroids as init_cent
+%matplotlib inline
+```
