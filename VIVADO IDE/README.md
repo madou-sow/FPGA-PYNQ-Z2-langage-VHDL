@@ -72,9 +72,9 @@ File > Export > Export Bitstream File full_add_behavioral_add3bits_pynqZ2bit
 
 
 
-<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/bitstream-add3bits.png" width=70% height=70%  title="Bits"/>
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/bitstream-add3bits.png" width=30% height=30%  title="Bits"/>
 
-<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/export-bitsream.png" width=70% height=70%  title="Bits"/>
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/export-bitsream.png" width=50% height=50%  title="Bits"/>
 
 **Programmation du FPGA et vérification** : Générer le flux binaire et vérifier la fonctionnalité
 
@@ -94,15 +94,15 @@ Sélectionnez l'appareil et vérifiez que add3bits.bit est sélectionné comme f
 Il existe une autre façon est de faire un clic droit sur l'appareil et de sélectionner Programmer le périphérique
 
 
-<img alt="tistream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/Fichier programmebtistream.png" width=70% height=70%  title="tistream"/>
-
+<img alt="tistream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/Fichier-programmebtistream.png" width=70% height=70%  title="tistream"/>
 
 <img alt="Z2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/ouvertureSessionforPynqZ2.png" width=70% height=70%  title="Z2"/>
 
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/OuvertureSessionHardWarePynqZ2.png" width=50% height=50%  title="bitstream"/>
 
+En Cliquant sur Program pour programmer le FPGA. Le voyant DONE s'allume lorsque l'appareil est
+programmé.
 
-<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/ouvertureSessionHardWarePynqZ2.png" width=70% height=70%  title="bitstream"/>
-
-<img alt="bitstream2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/pynqZ2bitstream2.png" width=70% height=70%  title="bitstream2"/>
+<img alt="bitstream2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/pynqZ2bitstream2.png" width=50% height=50%  title="bitstream2"/>
 
 
