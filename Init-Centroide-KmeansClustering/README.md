@@ -82,3 +82,9 @@ partitionnement naïf déterministe
 
 
 fichier [initialize_centroids.py](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/Init-Centroide-KmeansClustering/code/initialize_centroids.py)
+
+Le fichier onlin_kmeans.py contient des fonctions que nous allons importer et exploiter les 3 méthodes instanciations de l'algorithme KMeans :  
+
+- online_kmeans : K-Means en ligne utilisant la descente de gradient stochastique  
+- fully_online
+- et modified_fully_online  
