@@ -93,3 +93,9 @@ Function "online_kmeans" took 0.14835279900034948 seconds to complete.
 [temps-execution-online-kmeans.py](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/Init-Centroide-KmeansClustering/code/temps-execution-online-kmeans.py) ==> [temps-execution-online-kmeans.cpp](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/Init-Centroide-KmeansClustering/code/temps-execution-online-kmeans.cpp)
 
 ### Compilation de kmeans.beautifier.cpp,kmeansPlusPlus.beautifier.cpp,main.beautifier.cpp en langage C avec Vivado HLS
+
+
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exploration1.png" width=50% height=50%  title="Bits"/>
+
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comp-debug.png" width=50% height=50%  title="Bits"/>
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/Resultat-compilation.png" width=50% height=50%  title="Bits"/>
