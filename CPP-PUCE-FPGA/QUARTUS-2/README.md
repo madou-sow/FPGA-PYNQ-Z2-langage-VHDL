@@ -118,3 +118,6 @@ une consommation d'énergie dynamique significative.
 <img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exploit-synthese-quicksort1.png" width=50% height=50%  title="Bits"/>
 
 <img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exploit-synthese-quicksort2.png" width=50% height=50%  title="Bits"/>
+
+
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exploit-synthese-quicksort3.png" width=50% height=50%  title="Bits"/>
