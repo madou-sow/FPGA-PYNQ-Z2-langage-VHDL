@@ -52,12 +52,55 @@ constraints, cliquez sur Add Sources... comme le montre la figure suivante :
 
  <img alt="xdc" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/fichier-pynqZ2-xdc.png" width=70% height=70%  title="xdc"/>
 
- 
+**Procédure**
+
+Il vous est maintenant possible de faire la synthèse de votre circuit en vue d’une implémentation
+sur le FPGA. Pour ce faire, il faudra utiliser l’onglet Flow Navigator de Vivado (Colonne à gauche):
 
 
 
+<img alt="Flow" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/FlowNavigator.png" width=70% height=70%  title="Flow"/>
+
+Pour les opérations de **Synthesis, Implementation et Generate Bitstream**, il faut faire un clique-droit sur Run Synthesis, Run Implementation et Generate Bitstream, respectivement.
+
+**Run Synthesis** : permet de faire la synthèse du circuit en blocs configurables du FPGA.
+Run Implementation : permet de faire les mapping et routage nécessaires pour placer le tout sur
+le composant FPGA.
+
+**Generate Bitstream** : génère le fichier (.bit) utilisé pour programmer le FPGA.
+File > Export > Export Bitstream File full_add_behavioral_add3bits_pynqZ2bit
 
 
 
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/bitstream-add3bits.png" width=70% height=70%  title="Bits"/>
+
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/export-bitsream.png" width=70% height=70%  title="Bits"/>
+
+**Programmation du FPGA et vérification** : Générer le flux binaire et vérifier la fonctionnalité
+
+Une fois les trois étapes (synthèse, implémentation et génération du bitstream) finies, on peut
+procéder à la programmation du FPGA.
+
+- Branchez la carte à votre PC, et allumez votre carte (interrupteur à côté du câble mini
+USB)  
+- Dans la rubrique Program and Debug, cliquez sur Generate Bitstream    
+- Après quelques secondes, une fenêtre apparaît, sélectionnez Open Hardware Manager, puis OK
+- Cliquez droit sur la cible (xc7z020clg400-1), puis Program Device  
+
+Dans Flow Navigator, cliquez sur Open Hardware Manager => Open Target => Program pour
+programmer le FPGA tel que le montrent les figures suivantes :  
+
+Sélectionnez l'appareil et vérifiez que add3bits.bit est sélectionné comme fichier de programmation dans le Cliquez sur le lien Program device> xc7z020clg400-1 dans la barre d'informations verte programmer le périphérique FPGA cible.  
+Il existe une autre façon est de faire un clic droit sur l'appareil et de sélectionner Programmer le périphérique
 
 
+<img alt="tistream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/Fichier programmebtistream.png" width=70% height=70%  title="tistream"/>
+
+
+<img alt="Z2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/ouvertureSessionforPynqZ2.png" width=70% height=70%  title="Z2"/>
+
+
+
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/ouvertureSessionHardWarePynqZ2.png" width=70% height=70%  title="bitstream"/>
+
+<img alt="bitstream2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/pynqZ2bitstream2.png" width=70% height=70%  title="bitstream2"/>
