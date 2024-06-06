@@ -119,3 +119,49 @@ fig=plt.figure(figsize=(8,8), dpi=80, facecolor='w', edgecolor='k')
 plt.scatter(X[:, 0], X[:, 1]);
 
 ```
+
+## 4- Initialisation des centroïdes
+
+## 4.1- Initialisation aléatoire avec le Module onlink
+```
+random_centroids = onlink.random(X, n_clusters)
+print(random_centroids)
+
+[[ 5.00747147 -4.95714911]
+[ 5.75351227 9.89013493]
+[ 4.62571299 -6.02383563]
+[ 9.65359174 -1.09605057]]
+
+``` 
+## 4.2- Initialisation Controïde avec la fonction initialize_centroids
+```
+initialize_centroids(X, 3)
+
+array([[10.1605468 , -1.9134754 ],
+[ 3.43797499, 5.69301239],
+[ 5.95128954, -6.76202071]])
+``` 
+## 4.3- Initialisation de la fonction online_kmeans
+```
+Methode 1  
+online_kmeans(X, 3)
+array([[ 9.45183855, -0.75595106],
+[ 4.23638917, 7.34437084],
+[ 5.47389162, -5.26687277]])
+
+Methode 2
+online_kmeans_centroids = onlink.online_kmeans(X, n_clusters)
+print(online_kmeans_centroids)
+[[ 5.43772119 -5.29039364]
+[ 9.24308503 -1.00831402]
+[ 6.319311
+9.20703104]
+[ 2.11987182 5.45166773]]
+``` 
+## 4.4- Tracé des centroïdes avec la fonction online_kmeans
+```
+plt.scatter(X[:, 0], X[:, 1])
+centroids = online_kmeans(X, 3)
+plt.scatter(centroids[:, 0], centroids[:, 1],c='r', s=100)
+<matplotlib.collections.PathCollection at 0x7f913cdc3490>
+``` 
