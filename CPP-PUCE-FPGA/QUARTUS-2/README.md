@@ -1,4 +1,4 @@
-## Logiciel Quartus II
+## Quartus II
 Le logiciel de développement Quartus II fournit un environnement de conception complet pour la
 conception de système sur puce programmable (SOPC). Que vous utilisiez un ordinateur personnel
 ou une station de travail Linux, le logiciel Quartus II garantit une saisie facile de la conception, un
