@@ -86,3 +86,7 @@ Temps d'exécution "online_kmeans": 00:00:00.160 sec
 === Méthode 10 ===
 Function "online_kmeans" took 0.14835279900034948 seconds to complete.
 ```
+
+**Conversion d'un Code Python vers un Code C++**
+
+temps-execution-online-kmeans.py ==> temps-execution-online-kmeans.cpp
