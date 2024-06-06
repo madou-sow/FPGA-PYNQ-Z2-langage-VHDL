@@ -79,3 +79,6 @@ gravité et les transmettre en tant que ndarray au moment du Clustering
 naive_sharding : pour générer des centres de gravité de cluster à l'aide d'un algorithme de
 partitionnement naïf déterministe  
 - _ get _ mean : Vfunc vectorisable pour obtenir des moyennes de colonnes de fragments additionnés
+
+
+[fichier initialize_centroids.py](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/Init-Centroide-KmeansClustering/code/initialize_centroids.py)
