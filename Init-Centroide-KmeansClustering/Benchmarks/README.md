@@ -1,3 +1,32 @@
+**BSP : modèle Bulk Synchronous Parallelism**
+
+Le modèle BSP (Bulk Synchronous Parallelism) est un modèle de parallélisme bien adapté à l'utilisation des méthodes formelles. Il garantit une forme de structure dans le programme parallèle, en l'organisant en super-étapes où chacune d'entre elle est composées d'une phase de calculs, puis d'une phase de communications entre les unités de calculs.
+
+BSML(Bulk-Synchronous Parallel ML) et DMML(Departmental Metacomputing ML) sont deux
+extensions ML pour la programmation fonctionnelle d'algorithmes parallèles. Pour prédire le temps
+d'exécution d'un programme BSML, il est nécessaire de connaître les paramètres BSP ainsi que la
+puissance de calcul de la machine qui exécutera le programme.
+Une bibliothèque BSMLlib généralisé comme un système de programmation des algorithmes
+parallèles et globalisés,un algorithme pouvant être un serveur s'il entrelace deux ou plusieurs
+algorithmes data-parallèles.
+
+Il existe 4 paramètres BSP. Les paramètres g et L sont exprimés comme multiples de la vitesse des
+processeurs r. Le paramètre de communication g et celui de synchronisation l sont obtenues en
+mesurant le temps total d'une h-relation. Ces paramètres se mesurent en flops et sont dépendant du
+paramètre r qui se mesure en Mflops/s. Une h-relation est une étape de communication où chaque
+processeur envoie au h mots et reçoit au plus h mots et où au moins un processeur a reçu ou envoyé
+h mots, un mot étant un réel ou un entier.
+
+**Le Benchmark ou benchmarking**, désigne une technique de marketing visant pour une entreprise
+à observer les performances d'une autre entreprise, à comparer et à analyser les performances de
+produits ou services concurrents et leaders sur le marché, en vue d'optimiser la conception d'un
+nouveau produit, plus ou moins ...
+Le Benchmark est un outil de comparaison qui sert à évaluer la performance d’une entreprise sur
+son secteur économique et la comparer aux meilleurs acteurs du secteur.
+Cet outil d’amélioration continue se base sur un processus d’évaluation par rapport à un ou
+plusieurs modèles reconnus.
+
+
 ## Temps d'exécution de la online_kmeans.py
 
 fichier [online_kmeans.py](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/Init-Centroide-KmeansClustering/Benchmarks/code/online_kmeans.py)
