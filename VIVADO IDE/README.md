@@ -59,7 +59,7 @@ sur le FPGA. Pour ce faire, il faudra utiliser l’onglet Flow Navigator de Viva
 
 
 
-<img alt="Flow" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/FlowNavigator.png" width=70% height=70%  title="Flow"/>
+<img alt="Flow" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/FlowNavigator.png" width=30% height=30%  title="Flow"/>
 
 Pour les opérations de **Synthesis, Implementation et Generate Bitstream**, il faut faire un clique-droit sur Run Synthesis, Run Implementation et Generate Bitstream, respectivement.
 
