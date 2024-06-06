@@ -112,3 +112,6 @@ Le nombre d'éléments logiques, de multiplicateurs et d'éléments de RAM utili
 modes de fonctionnement, affectent tous la consommation d'énergie.
 Le nombre et le type de signaux globaux couvrant de grandes zones de l'appareil peuvent avoir
 une consommation d'énergie dynamique significative.
+
+### 6- Synthèse avec l’outil Xilinx de quicksort.cpp sans le module random et sans récursivité
+
