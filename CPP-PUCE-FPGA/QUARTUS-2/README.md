@@ -113,5 +113,5 @@ modes de fonctionnement, affectent tous la consommation d'énergie.
 Le nombre et le type de signaux globaux couvrant de grandes zones de l'appareil peuvent avoir
 une consommation d'énergie dynamique significative.
 
-### 6- Synthèse avec l’outil Xilinx de quicksort.cpp sans le module random et sans récursivité
+### 6- Synthèse avec l’outil Xilinx de [quicksort.cpp](https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/CPP-PUCE-FPGA/QUARTUS-2/code/quicksort.cpp) sans le module random et sans récursivité
 
