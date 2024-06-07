@@ -143,20 +143,20 @@ niveau de la synthèse car le taux d'utilisation de BRAM était 2948%
 <img alt="power" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/vivado-power.png" width=70% height=70%  title="power"/>
 
 
-<img alt="comp-1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-1.png" width=70% height=70%  title="comp-1"/>
+<img alt="comp-1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-1.png" width=70% height=70%  title="comp-1"/>
 
-<img alt="comp-2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-2.png" width=70% height=70%  title="comp-2"/>
+<img alt="comp-2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-2.png" width=70% height=70%  title="comp-2"/>
 
-<img alt="comp-2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-2.png" width=70% height=70%  title="comp-2"/>
+<img alt="comp-2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-2.png" width=70% height=70%  title="comp-2"/>
 
-<img alt="comp-2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-2.png" width=70% height=70%  title="comp-2"/>
+<img alt="comp-2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-2.png" width=70% height=70%  title="comp-2"/>
 
-<img alt="comp-3" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-3.png" width=70% height=70%  title="comp-3"/>
+<img alt="comp-3" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-3.png" width=70% height=70%  title="comp-3"/>
 
-<img alt="comp-4" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-4.png" width=70% height=70%  title="comp-4"/>
+<img alt="comp-4" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-4.png" width=70% height=70%  title="comp-4"/>
 
-<img alt="comp-5" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-5.png" width=70% height=70%  title="comp-5"/>
+<img alt="comp-5" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-5.png" width=70% height=70%  title="comp-5"/>
 
-<img alt="comp-6" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-6.png" width=70% height=70%  title="comp-6"/>
+<img alt="comp-6" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-6.png" width=70% height=70%  title="comp-6"/>
 
-<img alt="comp-7" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comaprison-vivado-quartus-7.png" width=70% height=70%  title="comp-7"/>
+<img alt="comp-7" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/comparison-vivado-quartus-7.png" width=70% height=70%  title="comp-7"/>
