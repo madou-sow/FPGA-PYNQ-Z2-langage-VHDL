@@ -124,7 +124,7 @@ une consommation d'énergie dynamique significative.
 
 **En exportant en RTL comme IP**
 
-<img alt="RTL1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLquicksort1.png" width=50% height=50%  title="RTL1"/>
+<img alt="RTL1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLquicksort1.png" width=70% height=70%  title="RTL1"/>
 
 
-<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLquicksort1.png" width=50% height=50%  title="Bits"/>
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLquicksort1.png" width=70% height=70%  title="Bits"/>
