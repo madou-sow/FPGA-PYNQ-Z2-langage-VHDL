@@ -40,4 +40,10 @@ Résultat des tests avec Panda à partir de l’exploitation de la vectorisation
 
 - Inconvénients  
 Infrastructure de mémoire plus grande  
-Unités fonctionnelles plus complexes  
+Unités fonctionnelles plus complexes
+
+### 3- Premier exemple - Transformation de code
+
+- Générez un accélérateur avec une taille de vecteur égale à un pour voir l'effet de la transformation du code
+
+  
