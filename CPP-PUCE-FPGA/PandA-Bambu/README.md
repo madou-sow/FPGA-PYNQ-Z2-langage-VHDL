@@ -46,4 +46,10 @@ Unités fonctionnelles plus complexes
 
 - Générez un accélérateur avec une taille de vecteur égale à un pour voir l'effet de la transformation du code
 
-  
+  <img alt="bambu-1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/bambu-1.png" width=70% height=70%  title="bambu-1"/>
+
+  <img alt="bambu-2" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/bambu-2.png" width=70% height=70%  title="bambu-2"/>
+
+  <img alt="bambu-3" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/bambu-3.png" width=70% height=70%  title="bambu-3"/>
+
+<img alt="bambu-4" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/bambu-4.png" width=70% height=70%  title="bambu-4"/>
