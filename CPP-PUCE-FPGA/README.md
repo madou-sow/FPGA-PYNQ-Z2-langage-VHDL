@@ -12,3 +12,7 @@
 ## 6- Tests et Observations
 
 ## 7- Utilisation de VIVADO 2019.2
+
+## 8- Utilisation de Quartus II
+
+## 9- Utilisation de PandA (Bambu)
