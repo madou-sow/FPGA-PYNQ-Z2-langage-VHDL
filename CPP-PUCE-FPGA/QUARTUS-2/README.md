@@ -135,7 +135,7 @@ Voici le résultat cette fois l'on travaille avec vivado. Nous avons lancer 2 te
 niveau de la synthèse car le taux d'utilisation de BRAM était 2948%
 
 
-<img alt="RTL1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/vivado-quicksortsansrandom-1000000.png" width=70% height=70%  title="RTL1"/>
+<img alt="RTL1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/vivado-quicksortsansrandom-1000000-power.png" width=70% height=70%  title="RTL1"/>
 
 
-<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/vivado-quicksortsansrandom-64.png" width=30% height=30%  title="Bits"/>
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/vivado-quicksortsansrandom-64-power.png" width=30% height=30%  title="Bits"/>
