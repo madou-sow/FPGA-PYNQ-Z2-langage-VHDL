@@ -1,4 +1,5 @@
-## PandA (Bambu)
+## PandA (Bambu)
+
 L'objectif principal du projet PandA est de développer un cadre utilisable qui permettra la recherche
 de nouvelles idées dans le domaine de la co-conception HW-SW.
 Le cadre PandA comprend des méthodologies soutenant la recherche sur la synthèse de haut niveau
