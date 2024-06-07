@@ -28,15 +28,15 @@ Résultat des tests avec Panda à partir de l’exploitation de la vectorisation
 
 - Les unités fonctionnelles vectorielles peuvent être synthétisées pour toutes les opérations de calcul  
 - Avantages par rapport à la parallélisation complète de la boucle Machine à états finis plus simple  
-• Limite les frais généraux de la zone  
-• Limite la réduction de fréquence  
+    • Limite les frais généraux de la zone  
+    • Limite la réduction de fréquence  
 
 Accès mémoire aligné  
-• Allocation de mémoire ad hoc  
+    • Allocation de mémoire ad hoc  
 
 Les unités fonctionnelles vectorielles peuvent être obtenues par  
-• partage d'unités fonctionnelles scalaires  
-• réplication des unités fonctionnelles scalaires  
+    • partage d'unités fonctionnelles scalaires  
+    • réplication des unités fonctionnelles scalaires  
 
 - Inconvénients  
 Infrastructure de mémoire plus grande  
