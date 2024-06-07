@@ -121,3 +121,10 @@ une consommation d'énergie dynamique significative.
 
 
 <img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exploit-synthese-quicksort3.png" width=50% height=50%  title="Bits"/>
+
+**En exportant en RTL comme IP**
+
+<img alt="RTL1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLquicksort1.png" width=50% height=50%  title="RTL1"/>
+
+
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLquicksort1.png" width=50% height=50%  title="Bits"/>
