@@ -31,10 +31,10 @@ Résultat des tests avec Panda à partir de l’exploitation de la vectorisation
     • Limite les frais généraux de la zone  
     • Limite la réduction de fréquence  
 
-Accès mémoire aligné  
+- Accès mémoire aligné  
     • Allocation de mémoire ad hoc  
 
-Les unités fonctionnelles vectorielles peuvent être obtenues par  
+- Les unités fonctionnelles vectorielles peuvent être obtenues par  
     • partage d'unités fonctionnelles scalaires  
     • réplication des unités fonctionnelles scalaires  
 
