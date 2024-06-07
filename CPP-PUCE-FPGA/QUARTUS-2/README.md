@@ -128,3 +128,11 @@ une consommation d'énergie dynamique significative.
 
 
 <img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/exportRTLquicksort2.png" width=30% height=30%  title="Bits"/>
+
+**Observation et Analyse**
+
+La cellule logique est considérée comme ASIC 15 Gates.
+Le taux de conversion de CLB en cellule logique est de 1,25 soit 1,25 CLB = 1 cellule logique. L'utilisation des LUT vous donnera le nombre de CLB utilisés (= 1/1,25 cellules logiques)
+
+Dans notre cas : LUT x expression = 163 avec 1 000 000 de points, à quoi correspond le CLB utilisés dans le tableau sans doute le nombre 163 si c'est le cas le nombre total de Cellules logiques
+= 163 x 1,25 = 203,75 et le nombre de gates = 203,75 x 15 =3056,25
