@@ -23,3 +23,21 @@ la majorité des constructions C, Bambu s'intègre à de nombreuses synthèses l
 parallèle annoté avec OpenMP. Il optimise également les architectures mémoire des accélérateurs générés.
 
 Résultat des tests avec Panda à partir de l’exploitation de la vectorisation à haut niveau Synthèse de boucles irrégulières imbriquées
+
+### 2- Vectorisation des boucles externes en haut niveau La synthèse
+
+- Les unités fonctionnelles vectorielles peuvent être synthétisées pour toutes les opérations de calcul  
+- Avantages par rapport à la parallélisation complète de la boucle Machine à états finis plus simple  
+• Limite les frais généraux de la zone  
+• Limite la réduction de fréquence  
+
+Accès mémoire aligné  
+• Allocation de mémoire ad hoc  
+
+Les unités fonctionnelles vectorielles peuvent être obtenues par  
+• partage d'unités fonctionnelles scalaires  
+• réplication des unités fonctionnelles scalaires  
+
+- Inconvénients  
+Infrastructure de mémoire plus grande  
+Unités fonctionnelles plus complexes  
