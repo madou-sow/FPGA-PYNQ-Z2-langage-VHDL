@@ -131,8 +131,11 @@ une consommation d'énergie dynamique significative.
 
 **Observation et Analyse**
 
-La cellule logique est considérée comme ASIC 15 Gates.
-Le taux de conversion de CLB en cellule logique est de 1,25 soit 1,25 CLB = 1 cellule logique. L'utilisation des LUT vous donnera le nombre de CLB utilisés (= 1/1,25 cellules logiques)
+Voici le résultat cette fois l'on travaille avec vivado. Nous avons lancer 2 tests avec 1 000 000 points et 64 points. Avec le 1 000 000 points la manipulation n'a pas abouti la séquence s'est arrêté au
+niveau de la synthèse car le taux d'utilisation de BRAM était 2948%
 
-Dans notre cas : LUT x expression = 163 avec 1 000 000 de points, à quoi correspond le CLB utilisés dans le tableau sans doute le nombre 163 si c'est le cas le nombre total de Cellules logiques
-= 163 x 1,25 = 203,75 et le nombre de gates = 203,75 x 15 =3056,25
+
+<img alt="RTL1" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/vivado-quicksortsansrandom-1000000.png" width=70% height=70%  title="RTL1"/>
+
+
+<img alt="bitstream" src="https://github.com/madou-sow/FPGA-PYNQ-Z2-langage-VHDL/blob/main/images/vivado-quicksortsansrandom-64.png" width=30% height=30%  title="Bits"/>
